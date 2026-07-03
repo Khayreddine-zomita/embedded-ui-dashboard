@@ -1,0 +1,76 @@
+<component>
+	<api>
+		<prop name="title_text" type="string" />
+		<prop name="description_text" type="string" />
+	</api>
+
+	<view
+		width="452"
+		height="50"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="12"
+		style_pad_all="0"
+		style_border_width="1"
+		style_border_color="#COLOR_DIVIDER"
+		style_shadow_width="8"
+		style_shadow_opa="16"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<lv_label
+			name="irrigation_settings_night_break_title_label"
+			x="20"
+			y="8"
+			width="180"
+			text="$title_text"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_14"
+		/>
+
+		<lv_label
+			name="irrigation_settings_night_break_desc_label"
+			x="20"
+			y="29"
+			width="315"
+			text="$description_text"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_button
+			name="irrigation_settings_night_break_toggle_btn"
+			x="374"
+			y="8"
+			width="58"
+			height="30"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_PRIMARY_GREEN"
+			style_bg_opa="255"
+			style_radius="15"
+			style_border_width="0"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_obj
+				name="irrigation_settings_night_break_toggle_knob"
+				x="30"
+				y="3"
+				width="24"
+				height="24"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_WHITE"
+				style_bg_opa="255"
+				style_radius="12"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+		</lv_button>
+	</view>
+</component>

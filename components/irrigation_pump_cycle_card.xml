@@ -1,0 +1,252 @@
+﻿<component>
+	<api>
+		<prop name="pump_on_value" type="string" />
+		<prop name="pump_off_value" type="string" />
+		<prop name="schedule_label" type="string" />
+		<prop name="schedule_time" type="string" />
+	</api>
+
+	<view
+		width="228"
+		height="140"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="16"
+		style_pad_all="0"
+		style_border_width="0"
+		style_shadow_width="8"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<!-- Title -->
+		<lv_label
+			name="pump_cycle_title_label"
+			x="12"
+			y="10"
+			width="130"
+			text="PUMP CYCLE"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+		/>
+
+		<!-- Pump ON row -->
+		<lv_label
+			name="pump_on_title_label"
+			x="12"
+			y="42"
+			width="70"
+			text="Pump ON"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_11"
+		/>
+
+		<lv_button
+			name="pump_on_minus_btn"
+			x="104"
+			y="34"
+			width="28"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_SOFT_SURFACE"
+			style_bg_opa="255"
+			style_radius="14"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="pump_on_minus_label"
+				x="0"
+				y="5"
+				width="28"
+				text="-"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_15"
+			/>
+		</lv_button>
+
+		<lv_label
+			name="pump_on_value_label"
+			x="136"
+			y="41"
+			width="50"
+			text="$pump_on_value"
+			long_mode="clip"
+			style_text_align="center"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_button
+			name="pump_on_plus_btn"
+			x="188"
+			y="34"
+			width="28"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_PRIMARY_GREEN"
+			style_bg_opa="255"
+			style_radius="14"
+			style_border_width="0"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="pump_on_plus_label"
+				x="0"
+				y="5"
+				width="28"
+				text="+"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_15"
+			/>
+		</lv_button>
+
+		<lv_obj
+			name="pump_cycle_divider_1"
+			x="12"
+			y="68"
+			width="204"
+			height="1"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- Pump OFF row -->
+		<lv_label
+			name="pump_off_title_label"
+			x="12"
+			y="80"
+			width="70"
+			text="Pump OFF"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_11"
+		/>
+
+		<lv_button
+			name="pump_off_minus_btn"
+			x="104"
+			y="72"
+			width="28"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_SOFT_SURFACE"
+			style_bg_opa="255"
+			style_radius="14"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="pump_off_minus_label"
+				x="0"
+				y="5"
+				width="28"
+				text="-"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_15"
+			/>
+		</lv_button>
+
+		<lv_label
+			name="pump_off_value_label"
+			x="136"
+			y="79"
+			width="50"
+			text="$pump_off_value"
+			long_mode="clip"
+			style_text_align="center"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_button
+			name="pump_off_plus_btn"
+			x="188"
+			y="72"
+			width="28"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_PRIMARY_GREEN"
+			style_bg_opa="255"
+			style_radius="14"
+			style_border_width="0"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="pump_off_plus_label"
+				x="0"
+				y="5"
+				width="28"
+				text="+"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_15"
+			/>
+		</lv_button>
+
+		<lv_obj
+			name="pump_cycle_divider_2"
+			x="12"
+			y="106"
+			width="204"
+			height="1"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- Schedule footer -->
+		<lv_label
+			name="pump_cycle_schedule_label"
+			x="12"
+			y="116"
+			width="90"
+			text="$schedule_label"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_MUTED"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_label
+			name="pump_cycle_schedule_time_label"
+			x="104"
+			y="116"
+			width="112"
+			text="$schedule_time"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_10"
+		/>
+	</view>
+</component>
+
+

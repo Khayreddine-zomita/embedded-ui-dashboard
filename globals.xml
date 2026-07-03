@@ -1,0 +1,302 @@
+<globals>
+	<consts>
+		<!-- ========================================================= -->
+		<!-- GL Towers Dashboard Palette                               -->
+		<!-- ========================================================= -->
+
+		<!-- Brand colors -->
+		<color name="COLOR_PRIMARY_GREEN" value="0x1A6B38" />
+		<color name="COLOR_SECONDARY_GREEN" value="0x22883F" />
+		<color name="COLOR_LIGHT_GREEN" value="0xDFF0E6" />
+
+		<!-- Background colors -->
+		<color name="COLOR_APP_BG" value="0xF1F6F3" />
+		<color name="COLOR_CARD_BG" value="0xFFFFFF" />
+		<color name="COLOR_WHITE" value="0xFFFFFF" />
+
+		<!-- Text colors -->
+		<color name="COLOR_TEXT_PRIMARY" value="0x0D1F14" />
+		<color name="COLOR_TEXT_SECONDARY" value="0x3A6448" />
+		<color name="COLOR_TEXT_MUTED" value="0x7A9E87" />
+
+		<!-- Status colors -->
+		<color name="COLOR_STATUS_HEALTHY" value="0x1A6B38" />
+		<color name="COLOR_STATUS_WARNING" value="0xB8620A" />
+		<color name="COLOR_STATUS_CRITICAL" value="0xC0392B" />
+		<color name="COLOR_STATUS_INFO" value="0x2473AA" />
+		<color name="COLOR_WARNING_BG" value="0xFFF4E3" />
+
+		<!-- UI structure -->
+		<color name="COLOR_DIVIDER" value="0xDDE9E1" />
+		<color name="COLOR_SOFT_SURFACE" value="0xF8FCF9" />
+		<color name="COLOR_SHADOW" value="0x000000" />
+
+		<!-- Extra UI colors -->
+		<color name="COLOR_PURPLE" value="0x6A35FF" />
+		<color name="COLOR_BLUE" value="0x2473AA" />
+		<color name="COLOR_WATER_TEMP_BG" value="0xD0EEF9" />
+
+		<!-- Backward-compatible aliases -->
+		<color name="COLOR_DARK_FOREST" value="0x0D1F14" />
+		<color name="COLOR_GL_GREEN" value="0x1A6B38" />
+		<color name="COLOR_GL_GREEN_DARK" value="0x0F4F2A" />
+		<color name="COLOR_SUCCESS_GREEN" value="0x1A6B38" />
+		<color name="COLOR_ALERT_RED" value="0xC0392B" />
+		<color name="COLOR_ALERT_ORANGE" value="0xB8620A" />
+		<color name="COLOR_MUTED_GRAY" value="0xDDE9E1" />
+		<color name="COLOR_BOTTOM_NAV_BG" value="0xFFFFFF" />
+	</consts>
+
+	<!-- ========================================================= -->
+	<!-- Inter Fonts                                                -->
+	<!-- ========================================================= -->
+	<fonts>
+		<bin
+			as_file="false"
+			name="font_inter_8"
+			src_path="fonts/Inter_18pt-Regular.ttf"
+			size="8"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_9"
+			src_path="fonts/Inter_18pt-Regular.ttf"
+			size="9"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_10"
+			src_path="fonts/Inter_18pt-Medium.ttf"
+			size="10"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_11"
+			src_path="fonts/Inter_18pt-Medium.ttf"
+			size="11"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_12"
+			src_path="fonts/Inter_18pt-SemiBold.ttf"
+			size="12"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_14"
+			src_path="fonts/Inter_18pt-SemiBold.ttf"
+			size="14"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_15"
+			src_path="fonts/Inter_18pt-Bold.ttf"
+			size="15"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+
+		<bin
+			as_file="false"
+			name="font_inter_26"
+			src_path="fonts/Inter_28pt-Bold.ttf"
+			size="26"
+			bpp="4"
+			range="0x20-0x7f"
+			symbols="°%"
+		/>
+	</fonts>
+
+	<!-- ========================================================= -->
+	<!-- Images                                                     -->
+	<!-- ========================================================= -->
+	<images>
+		<!-- GL Towers logo -->
+		<data
+			name="img_gl_towers_logo_1"
+			color_format="argb8888"
+			src_path="images/logo/gl_towers_logo_without_bg_24px.png"
+		/>
+
+		<!-- Edit irrigation settings screen chevron icons-->
+		<data
+			name="img_simple_chevron_icon_1"
+			color_format="argb8888"
+			src_path="images/icons/simple_chevron_right_16px.png"
+		/>
+
+		<data
+			name="img_simple_chevron_icon_2"
+			color_format="argb8888"
+			src_path="images/icons/simple_chevron_right_24px.png"
+		/>
+
+		<!--Growth stage icons -->
+		<data
+			name="img_irrigation_growth_stage_germination_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_growth_stage_germination_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_growth_stage_germination_color_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_growth_stage_germination_color_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_growth_stage_seedling_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_seedling_icon_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_growth_stage_vegetative_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_vegetative_icon_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_growth_stage_mature_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_mature_icon_16px.png"
+		/>
+
+		<!-- Substrate icons -->
+		<data
+			name="img_irrigation_drop_silhouette_substrate_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_drop_silhouette_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_clay_pebbles_substrate_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_clay_pebbles_substrate_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_rockwool_substrate_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_rockwool_substrate_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_coco_coir_substrate_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_coco_coir_substrate_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_mixed_soil_substrate_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_mixed_soil_substrate_16px.png"
+		/>
+		<!-- Irrigation Screen Icons -->
+		<data
+			name="img_irrigation_germination_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_germination_icon_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_germination_24px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_germination_icon_24px.png"
+		/>
+
+		<data
+			name="img_irrigation_drop_silhouette_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_drop_silhouette_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_drop_silhouette_24px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_drop_silhouette_24px.png"
+		/>
+
+		<data
+			name="img_irrigation_drop_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_drop_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_drop_24px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_drop_24px.png"
+		/>
+
+		<data
+			name="img_irrigation_clock_16px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_clock_16px.png"
+		/>
+
+		<data
+			name="img_irrigation_clock_24px"
+			color_format="argb8888"
+			src_path="images/icons/irrigation_clock_24px.png"
+		/>
+
+		<data
+			name="img_irrigation_pump_24px"
+			color_format="argb8888"
+			src_path="images/icons/home_water-pump_24px.png"
+		/>
+
+		<!-- Top Status Bar Icons -->
+		<data name="img_top_status_bar_wifi" color_format="argb8888" src_path="images/icons/wifi_signal_16px.png" />
+
+		<data
+			name="img_top_status_bar_no_wifi"
+			color_format="argb8888"
+			src_path="images/icons/no_wifi_signal_16px.png"
+		/>
+
+		<!-- Home Status Row Icons -->
+		<data name="img_home_pump" color_format="argb8888" src_path="images/icons/home_water-pump_24px.png" />
+
+		<data name="img_home_irrigation" color_format="argb8888" src_path="images/icons/nav-irrigation-icon-24px.png" />
+
+		<data name="img_home_light" color_format="argb8888" src_path="images/icons/nav-light-icon-24px.png" />
+
+		<!-- Bottom Navigation Icons -->
+		<data name="img_nav_home" color_format="argb8888" src_path="images/icons/nav-home-icon-16px.png" />
+
+		<data name="img_nav_sensors" color_format="argb8888" src_path="images/icons/nav-sensors-icon-16px.png" />
+
+		<data name="img_nav_irrigation" color_format="argb8888" src_path="images/icons/nav-irrigation-icon-16px.png" />
+
+		<data name="img_nav_light" color_format="argb8888" src_path="images/icons/nav-light-icon-16px.png" />
+
+		<data name="img_nav_settings" color_format="argb8888" src_path="images/icons/nav-setting-icon-16px.png" />
+	</images>
+</globals>

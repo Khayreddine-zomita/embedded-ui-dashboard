@@ -1,0 +1,94 @@
+<screen name="screen_home">
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
+
+		<home_reservoir_card
+			x="8"
+			y="52"
+			reservoir_value="56"
+			reservoir_unit_x="46"
+			reservoir_volume="6.0 L / 6.5 L"
+			reservoir_hint="Tank level"
+			reservoir_level="62"
+		/>
+
+		<home_sensor_card
+			x="166"
+			y="52"
+			sensor_title="pH"
+			sensor_value="6.1"
+			sensor_unit=""
+			sensor_unit_x="58"
+			sensor_status="Optimal"
+			sensor_title_color="#COLOR_PURPLE"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+		/>
+
+		<home_sensor_card
+			x="324"
+			y="52"
+			sensor_title="EC"
+			sensor_value="1.6"
+			sensor_unit=""
+			sensor_unit_x="58"
+			sensor_status="Optimal"
+			sensor_title_color="#COLOR_PURPLE"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+		/>
+
+		<home_sensor_card
+			x="166"
+			y="136"
+			sensor_title="WATER TEMP"
+			sensor_value="22.2"
+			sensor_unit="°C"
+			sensor_unit_x="70"
+			sensor_status="Optimal"
+			sensor_title_color="#COLOR_STATUS_INFO"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+		/>
+
+		<home_sensor_card
+			x="324"
+			y="136"
+			sensor_title="AIR TEMP"
+			sensor_value="22.8"
+			sensor_unit="°C"
+			sensor_unit_x="70"
+			sensor_status="Good"
+			sensor_title_color="#COLOR_STATUS_CRITICAL"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+		/>
+
+		<home_status_row
+			x="8"
+			y="222"
+			pump_status="ON"
+			irrigation_status="ON"
+			led_status="ON"
+			pump_color="#COLOR_PRIMARY_GREEN"
+			irrigation_color="#COLOR_PRIMARY_GREEN"
+			led_color="#COLOR_PRIMARY_GREEN"
+		/>
+
+		<global_bottom_nav
+			x="0"
+			y="280"
+			nav_home_text_color="#COLOR_GL_GREEN"
+			nav_sensors_text_color="#COLOR_DARK_FOREST"
+			nav_irrigation_text_color="#COLOR_DARK_FOREST"
+			nav_led_text_color="#COLOR_DARK_FOREST"
+			nav_settings_text_color="#COLOR_DARK_FOREST"
+		/>
+	</view>
+</screen>

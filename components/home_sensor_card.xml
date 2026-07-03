@@ -1,0 +1,73 @@
+﻿<component>
+	<api>
+		<prop name="sensor_title" type="string" />
+		<prop name="sensor_value" type="string" />
+		<prop name="sensor_unit" type="string" />
+		<prop name="sensor_unit_x" type="int" />
+		<prop name="sensor_status" type="string" />
+		<prop name="sensor_title_color" type="color" />
+		<prop name="sensor_status_color" type="color" />
+	</api>
+
+	<view
+		width="148"
+		height="74"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="16"
+		style_pad_all="0"
+		style_border_width="0"
+		style_shadow_width="8"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<lv_label
+			name="home_sensor_title"
+			x="10"
+			y="8"
+			width="100"
+			text="$sensor_title"
+			long_mode="clip"
+			style_text_color="$sensor_title_color"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_label
+			name="home_sensor_value"
+			x="10"
+			y="28"
+			width="72"
+			text="$sensor_value"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_26"
+		/>
+
+		<lv_label
+			name="home_sensor_unit"
+			x="$sensor_unit_x"
+			y="41"
+			width="30"
+			text="$sensor_unit"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_9"
+		/>
+
+		<lv_label
+			name="home_sensor_status"
+			x="105"
+			y="45"
+			width="40"
+			text="$sensor_status"
+			long_mode="clip"
+			style_text_color="$sensor_status_color"
+			style_text_font="font_inter_10"
+		/>
+	</view>
+</component>
+
+

@@ -1,0 +1,166 @@
+﻿<component>
+	<api>
+		<prop name="pump_status" type="string" />
+		<prop name="irrigation_status" type="string" />
+		<prop name="led_status" type="string" />
+		<prop name="pump_color" type="color" />
+		<prop name="irrigation_color" type="color" />
+		<prop name="led_color" type="color" />
+	</api>
+
+	<view
+		width="464"
+		height="48"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="14"
+		style_pad_all="0"
+		style_border_width="0"
+		style_shadow_width="8"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<!-- Pump icon -->
+		<lv_image
+			name="home_pump_icon"
+			x="22"
+			y="10"
+			width="26"
+			height="26"
+			src="img_home_pump"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_DARK_FOREST"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="home_pump_title"
+			x="56"
+			y="8"
+			width="70"
+			text="Pump"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_label
+			name="home_pump_status"
+			x="56"
+			y="27"
+			width="44"
+			text="$pump_status"
+			long_mode="clip"
+			style_text_color="$pump_color"
+			style_text_font="font_inter_10"
+		/>
+
+		<!-- Divider 1 -->
+		<lv_obj
+			x="150"
+			y="8"
+			width="1"
+			height="32"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_radius="0"
+			style_pad_all="0"
+		/>
+
+		<!-- Irrigation icon -->
+		<lv_image
+			name="home_irrigation_icon"
+			x="170"
+			y="10"
+			width="26"
+			height="26"
+			src="img_home_irrigation"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_STATUS_INFO"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="home_irrigation_title"
+			x="202"
+			y="8"
+			width="84"
+			text="Irrigation"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_label
+			name="home_irrigation_status"
+			x="202"
+			y="27"
+			width="44"
+			text="$irrigation_status"
+			long_mode="clip"
+			style_text_color="$irrigation_color"
+			style_text_font="font_inter_10"
+		/>
+
+		<!-- Divider 2 -->
+		<lv_obj
+			x="306"
+			y="8"
+			width="1"
+			height="32"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_radius="0"
+			style_pad_all="0"
+		/>
+
+		<!-- LED icon -->
+		<lv_image
+			name="home_led_icon"
+			x="324"
+			y="10"
+			width="26"
+			height="26"
+			src="img_home_light"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_ALERT_ORANGE"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="home_led_title"
+			x="356"
+			y="8"
+			width="86"
+			text="LED Lights"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_label
+			name="home_led_status"
+			x="356"
+			y="27"
+			width="44"
+			text="$led_status"
+			long_mode="clip"
+			style_text_color="$led_color"
+			style_text_font="font_inter_10"
+		/>
+	</view>
+</component>
+
+

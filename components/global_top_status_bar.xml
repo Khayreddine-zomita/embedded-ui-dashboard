@@ -1,0 +1,60 @@
+﻿<component>
+	<api>
+		<prop name="bar_title" type="string" />
+		<prop name="bar_time" type="string" />
+		<prop name="bar_wifi" type="string" />
+	</api>
+
+	<view
+		width="480"
+		height="44"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<!-- Brand title -->
+		<lv_label
+			name="status_title"
+			x="10"
+			y="13"
+			width="170"
+			text="$bar_title"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_14"
+		/>
+
+		<!-- Time -->
+		<lv_label
+			name="status_time"
+			x="410"
+			y="10"
+			width="62"
+			text="$bar_time"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_12"
+		/>
+
+		<!-- WiFi status -->
+		<lv_image
+			name="home_pump_icon"
+			x="415"
+			y="8"
+			width="18"
+			height="18"
+			src="img_top_status_bar_no_wifi"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_TEXT_PRIMARY"
+			style_image_recolor_opa="255"
+		/>
+	</view>
+</component>
+
+

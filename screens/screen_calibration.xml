@@ -1,0 +1,376 @@
+﻿<screen>
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_DARK_FOREST"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<!-- ========================================================= -->
+		<!-- TOP BAR                                                   -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="0"
+			y="0"
+			width="480"
+			height="36"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DARK_FOREST"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_radius="0"
+			style_pad_all="0"
+		>
+			<lv_obj
+				x="18"
+				y="11"
+				width="14"
+				height="14"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN"
+				style_bg_opa="255"
+				style_radius="7"
+				style_border_width="0"
+			/>
+
+			<lv_label
+				x="46"
+				y="10"
+				width="160"
+				text="CALIBRATION"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN"
+				style_text_font="font_inter_14"
+			/>
+
+			<lv_label
+				x="360"
+				y="10"
+				width="52"
+				text="13:20"
+				long_mode="clip"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				x="426"
+				y="10"
+				width="44"
+				text="WiFi"
+				long_mode="clip"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- pH PROBE CARD                                             -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="8"
+			y="42"
+			width="148"
+			height="190"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="10"
+				y="10"
+				width="110"
+				text="pH PROBE"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN_DARK"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				name="cal_ph_value"
+				x="10"
+				y="48"
+				width="72"
+				text="6.3"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_26"
+			/>
+
+			<lv_label
+				x="10"
+				y="92"
+				width="128"
+				text="Last calibrated:"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_label
+				x="10"
+				y="110"
+				width="128"
+				text="pending"
+				long_mode="clip"
+				style_text_color="#COLOR_ALERT_ORANGE"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_obj
+				x="10"
+				y="146"
+				width="128"
+				height="32"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN_DARK"
+				style_bg_opa="255"
+				style_radius="8"
+				style_border_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					x="0"
+					y="9"
+					width="128"
+					text="START PH"
+					long_mode="clip"
+					style_text_align="center"
+					style_text_color="#COLOR_WHITE"
+					style_text_font="font_inter_11"
+				/>
+			</lv_obj>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- EC PROBE CARD                                             -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="166"
+			y="42"
+			width="148"
+			height="190"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="10"
+				y="10"
+				width="110"
+				text="EC PROBE"
+				long_mode="clip"
+				style_text_color="#COLOR_BLUE"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				name="cal_ec_value"
+				x="10"
+				y="48"
+				width="72"
+				text="1.6"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_26"
+			/>
+
+			<lv_label
+				x="10"
+				y="92"
+				width="128"
+				text="Reference:"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_label
+				x="10"
+				y="110"
+				width="128"
+				text="1.413 mS/cm"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_obj
+				x="10"
+				y="146"
+				width="128"
+				height="32"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN_DARK"
+				style_bg_opa="255"
+				style_radius="8"
+				style_border_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					x="0"
+					y="9"
+					width="128"
+					text="START EC"
+					long_mode="clip"
+					style_text_align="center"
+					style_text_color="#COLOR_WHITE"
+					style_text_font="font_inter_11"
+				/>
+			</lv_obj>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- LOAD CELL CARD                                            -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="324"
+			y="42"
+			width="148"
+			height="190"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="10"
+				y="10"
+				width="110"
+				text="LOAD CELL"
+				long_mode="clip"
+				style_text_color="#COLOR_ALERT_ORANGE"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				name="cal_load_cell_value"
+				x="10"
+				y="50"
+				width="88"
+				text="6.0 L"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_26"
+			/>
+
+			<lv_label
+				x="10"
+				y="94"
+				width="128"
+				text="Scale status:"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_label
+				x="10"
+				y="112"
+				width="128"
+				text="Tare ready"
+				long_mode="clip"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_obj
+				x="10"
+				y="146"
+				width="128"
+				height="32"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_CARD_BG"
+				style_bg_opa="255"
+				style_radius="8"
+				style_border_width="1"
+				style_border_color="#COLOR_DIVIDER"
+				style_pad_all="0"
+			>
+				<lv_label
+					x="0"
+					y="9"
+					width="128"
+					text="TARE"
+					long_mode="clip"
+					style_text_align="center"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_11"
+				/>
+			</lv_obj>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- STATUS / NOTE CARD                                        -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="8"
+			y="244"
+			width="464"
+			height="48"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_MUTED_GRAY"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="0"
+		>
+			<lv_label
+				x="14"
+				y="10"
+				width="330"
+				text="Calibration flows use stable readings"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="14"
+				y="26"
+				width="330"
+				text="before saving sensor offsets."
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+
+			<lv_label
+				x="374"
+				y="17"
+				width="76"
+				text="READY"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_11"
+			/>
+		</lv_obj>
+	</view>
+</screen>
+
+

@@ -1,0 +1,40 @@
+<screen name="screen_irrigation">
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
+
+		<irrigation_overview_card
+			x="14"
+			y="40"
+			stage_text="Germination"
+			mode_title="Hydroponic"
+			cycle_summary="1 min on - 90 min pause"
+			cycles_per_day="10"
+			pump_per_day="10 min"
+			window_time="06:00-22:00"
+			night_break_status="ON"
+			warning_text="Window outside LED hours 06:00-18:00"
+		/>
+
+		<irrigation_edit_settings_button x="14" y="241" button_text="Edit irrigation settings" />
+
+		<global_bottom_nav
+			x="0"
+			y="280"
+			nav_home_text_color="#COLOR_DARK_FOREST"
+			nav_sensors_text_color="#COLOR_DARK_FOREST"
+			nav_irrigation_text_color="#COLOR_STATUS_HEALTHY"
+			nav_led_text_color="#COLOR_DARK_FOREST"
+			nav_settings_text_color="#COLOR_DARK_FOREST"
+		/>
+	</view>
+</screen>

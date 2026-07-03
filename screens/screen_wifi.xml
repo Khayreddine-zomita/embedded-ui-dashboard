@@ -1,0 +1,382 @@
+﻿<screen>
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_DARK_FOREST"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<!-- ========================================================= -->
+		<!-- TOP BAR                                                   -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="0"
+			y="0"
+			width="480"
+			height="36"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DARK_FOREST"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_radius="0"
+			style_pad_all="0"
+		>
+			<lv_obj
+				x="18"
+				y="11"
+				width="14"
+				height="14"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN"
+				style_bg_opa="255"
+				style_radius="7"
+				style_border_width="0"
+			/>
+
+			<lv_label
+				x="46"
+				y="10"
+				width="160"
+				text="WIFI SETUP"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN"
+				style_text_font="font_inter_14"
+			/>
+
+			<lv_label
+				x="360"
+				y="10"
+				width="52"
+				text="13:20"
+				long_mode="clip"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				x="426"
+				y="10"
+				width="44"
+				text="WiFi"
+				long_mode="clip"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- AVAILABLE NETWORKS CARD                                   -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="8"
+			y="42"
+			width="176"
+			height="250"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="12"
+				y="14"
+				width="130"
+				text="AVAILABLE"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN_DARK"
+				style_text_font="font_inter_14"
+			/>
+
+			<!-- Connected network -->
+			<lv_obj
+				x="10"
+				y="44"
+				width="156"
+				height="52"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_MUTED_GRAY"
+				style_bg_opa="255"
+				style_radius="8"
+				style_border_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					x="10"
+					y="8"
+					width="136"
+					text="GL_Towers_2.4G"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_11"
+				/>
+
+				<lv_label
+					x="10"
+					y="28"
+					width="136"
+					text="-48 dBm  Connected"
+					long_mode="clip"
+					style_text_color="#COLOR_SUCCESS_GREEN"
+					style_text_font="font_inter_9"
+				/>
+			</lv_obj>
+
+			<!-- Network 2 -->
+			<lv_label
+				x="18"
+				y="116"
+				width="136"
+				text="Greenhouse_AP"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="18"
+				y="134"
+				width="136"
+				text="-62 dBm"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_9"
+			/>
+
+			<lv_obj
+				x="12"
+				y="158"
+				width="152"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- Network 3 -->
+			<lv_label
+				x="18"
+				y="176"
+				width="136"
+				text="Mobile Hotspot"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="18"
+				y="194"
+				width="136"
+				text="-71 dBm"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_9"
+			/>
+
+			<!-- Scan indicator -->
+			<lv_label
+				x="12"
+				y="224"
+				width="152"
+				text="3 networks found"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_9"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- CONNECTION CARD                                           -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="192"
+			y="42"
+			width="280"
+			height="250"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="14"
+				y="14"
+				width="150"
+				text="CONNECTION"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN_DARK"
+				style_text_font="font_inter_14"
+			/>
+
+			<!-- Status row -->
+			<lv_label
+				x="14"
+				y="52"
+				width="90"
+				text="Status"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="168"
+				y="52"
+				width="96"
+				text="Connected"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_obj
+				x="14"
+				y="74"
+				width="252"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- RSSI row -->
+			<lv_label
+				x="14"
+				y="88"
+				width="90"
+				text="RSSI"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="184"
+				y="88"
+				width="80"
+				text="-48 dBm"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_obj
+				x="14"
+				y="110"
+				width="252"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- IP row -->
+			<lv_label
+				x="14"
+				y="124"
+				width="90"
+				text="IP"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="150"
+				y="124"
+				width="114"
+				text="192.168.1.60"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_obj
+				x="14"
+				y="146"
+				width="252"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- Network row -->
+			<lv_label
+				x="14"
+				y="160"
+				width="90"
+				text="Network"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="132"
+				y="160"
+				width="132"
+				text="GL_Towers_2.4G"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<!-- Change WiFi button -->
+			<lv_obj
+				x="14"
+				y="202"
+				width="252"
+				height="34"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN_DARK"
+				style_bg_opa="255"
+				style_radius="8"
+				style_border_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					x="0"
+					y="10"
+					width="252"
+					text="CHANGE WIFI"
+					long_mode="clip"
+					style_text_align="center"
+					style_text_color="#COLOR_WHITE"
+					style_text_font="font_inter_12"
+				/>
+			</lv_obj>
+		</lv_obj>
+	</view>
+</screen>
+
+

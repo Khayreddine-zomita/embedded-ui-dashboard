@@ -1,0 +1,135 @@
+﻿<screen>
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_DARK_FOREST"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<!-- ========================================================= -->
+		<!-- CENTER BRAND                                              -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="0"
+			y="0"
+			width="480"
+			height="320"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_opa="0"
+			style_border_width="0"
+			style_pad_all="0"
+		>
+			<lv_obj
+				x="230"
+				y="58"
+				width="20"
+				height="20"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN"
+				style_bg_opa="255"
+				style_radius="10"
+				style_border_width="0"
+			/>
+
+			<lv_label
+				x="0"
+				y="88"
+				width="480"
+				text="GL TOWERS"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_GL_GREEN"
+				style_text_font="font_inter_15"
+			/>
+
+			<!-- ===================================================== -->
+			<!-- TANK VALUE                                             -->
+			<!-- ===================================================== -->
+			<lv_label
+				x="170"
+				y="126"
+				width="92"
+				text="92"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_26"
+			/>
+
+			<lv_label
+				x="266"
+				y="126"
+				width="36"
+				text="%"
+				long_mode="clip"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_26"
+			/>
+
+			<!-- ===================================================== -->
+			<!-- STATUS SUMMARY                                         -->
+			<!-- ===================================================== -->
+			<lv_label
+				x="0"
+				y="196"
+				width="480"
+				text="Tank 6.0 L   Pump ON   LED ON"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_MUTED_GRAY"
+				style_text_font="font_inter_14"
+			/>
+
+			<!-- Small level bar -->
+			<lv_obj
+				x="140"
+				y="222"
+				width="200"
+				height="8"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_MUTED_GRAY"
+				style_bg_opa="255"
+				style_radius="4"
+				style_border_width="0"
+				style_pad_all="0"
+			>
+				<lv_obj
+					x="0"
+					y="0"
+					width="184"
+					height="8"
+					scrollable="false"
+					scrollbar_mode="off"
+					style_bg_color="#COLOR_GL_GREEN"
+					style_bg_opa="255"
+					style_radius="4"
+					style_border_width="0"
+					style_pad_all="0"
+				/>
+			</lv_obj>
+
+			<!-- ===================================================== -->
+			<!-- TIME                                                   -->
+			<!-- ===================================================== -->
+			<lv_label
+				x="0"
+				y="248"
+				width="480"
+				text="13:20"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_26"
+			/>
+		</lv_obj>
+	</view>
+</screen>
+
+

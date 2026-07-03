@@ -1,0 +1,140 @@
+﻿<component>
+	<api>
+		<prop name="schedule_time" type="string" />
+		<prop name="hours_per_day" type="string" />
+		<prop name="intensity_value" type="string" />
+		<prop name="status_text" type="string" />
+	</api>
+
+	<view
+		width="228"
+		height="158"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="16"
+		style_pad_all="0"
+		style_border_width="0"
+		style_shadow_width="8"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<lv_image
+			name="led_schedule_icon"
+			x="14"
+			y="10"
+			width="20"
+			height="20"
+			src="img_nav_light"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_STATUS_WARNING"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="led_schedule_title"
+			x="44"
+			y="13"
+			width="120"
+			text="SCHEDULE"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+		/>
+
+		<lv_label
+			name="led_schedule_time"
+			x="14"
+			y="50"
+			width="200"
+			text="$schedule_time"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_26"
+		/>
+
+		<lv_label
+			name="led_hours_per_day"
+			x="14"
+			y="94"
+			width="72"
+			text="$hours_per_day"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_15"
+		/>
+
+		<lv_label
+			x="14"
+			y="120"
+			width="76"
+			text="PER DAY"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_MUTED"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_obj
+			x="102"
+			y="92"
+			width="1"
+			height="38"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_label
+			name="led_schedule_intensity"
+			x="124"
+			y="94"
+			width="72"
+			text="$intensity_value"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_15"
+		/>
+
+		<lv_label
+			x="124"
+			y="120"
+			width="86"
+			text="INTENSITY"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_MUTED"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_obj
+			x="14"
+			y="138"
+			width="8"
+			height="8"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_STATUS_HEALTHY"
+			style_bg_opa="255"
+			style_radius="4"
+			style_border_width="0"
+		/>
+
+		<lv_label
+			name="led_schedule_status"
+			x="28"
+			y="137"
+			width="150"
+			text="$status_text"
+			long_mode="clip"
+			style_text_color="#COLOR_STATUS_HEALTHY"
+			style_text_font="font_inter_11"
+		/>
+	</view>
+</component>
+
+

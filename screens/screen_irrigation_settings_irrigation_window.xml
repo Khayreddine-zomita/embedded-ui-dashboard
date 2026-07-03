@@ -1,0 +1,34 @@
+<screen name="screen_irrigation_settings_irrigation_window">
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
+
+		<irrigation_settings_window_card x="14" y="44" start_time_text="06:00" end_time_text="22:00" end_time="hhh" />
+
+		<irrigation_settings_night_break_card
+			x="14"
+			y="164"
+			title_text="Night break"
+			description_text="Irrigation pauses outside the window."
+		/>
+
+		<irrigation_settings_manual_pump_test
+			x="14"
+			y="220"
+			title_text="Manual pump test"
+			description_text="Run pump for 10 seconds to test flow"
+			button_text="Test"
+		/>
+
+		<irrigation_settings_bottom_actions x="14" y="275" cancel_text="Cancel" apply_text="Apply Window" />
+	</view>
+</screen>

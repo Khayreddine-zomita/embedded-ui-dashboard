@@ -1,0 +1,386 @@
+﻿<screen>
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_DARK_FOREST"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<!-- ========================================================= -->
+		<!-- TOP BAR                                                   -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="0"
+			y="0"
+			width="480"
+			height="36"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DARK_FOREST"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_radius="0"
+			style_pad_all="0"
+		>
+			<lv_obj
+				x="18"
+				y="11"
+				width="14"
+				height="14"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN"
+				style_bg_opa="255"
+				style_radius="7"
+				style_border_width="0"
+			/>
+
+			<lv_label
+				x="46"
+				y="10"
+				width="160"
+				text="DIAGNOSTICS"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN"
+				style_text_font="font_inter_14"
+			/>
+
+			<lv_label
+				x="356"
+				y="10"
+				width="96"
+				text="SERVICE"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_ALERT_ORANGE"
+				style_text_font="font_inter_11"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- SYSTEM CARD                                               -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="8"
+			y="42"
+			width="228"
+			height="166"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="12"
+				y="12"
+				width="120"
+				text="SYSTEM"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN_DARK"
+				style_text_font="font_inter_14"
+			/>
+
+			<!-- Uptime row -->
+			<lv_label
+				x="12"
+				y="48"
+				width="86"
+				text="Uptime"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="124"
+				y="48"
+				width="90"
+				text="00:42:18"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_obj
+				x="12"
+				y="70"
+				width="204"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- Free heap row -->
+			<lv_label
+				x="12"
+				y="84"
+				width="86"
+				text="Free heap"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="144"
+				y="84"
+				width="70"
+				text="128 KB"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_obj
+				x="12"
+				y="106"
+				width="204"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+			/>
+
+			<!-- Loop row -->
+			<lv_label
+				x="12"
+				y="120"
+				width="86"
+				text="Loop"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="164"
+				y="120"
+				width="50"
+				text="OK"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				x="12"
+				y="144"
+				width="204"
+				text="Runtime stable"
+				long_mode="clip"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- IO STATUS CARD                                            -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="244"
+			y="42"
+			width="228"
+			height="166"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				x="12"
+				y="12"
+				width="120"
+				text="IO STATUS"
+				long_mode="clip"
+				style_text_color="#COLOR_GL_GREEN_DARK"
+				style_text_font="font_inter_14"
+			/>
+
+			<!-- Pump row -->
+			<lv_label
+				x="12"
+				y="46"
+				width="80"
+				text="Pump"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="154"
+				y="46"
+				width="60"
+				text="ON"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_12"
+			/>
+
+			<!-- LED row -->
+			<lv_label
+				x="12"
+				y="72"
+				width="80"
+				text="LED"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="128"
+				y="72"
+				width="86"
+				text="ON 80%"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_12"
+			/>
+
+			<!-- Sensors row -->
+			<lv_label
+				x="12"
+				y="98"
+				width="80"
+				text="Sensors"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="134"
+				y="98"
+				width="80"
+				text="online"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_12"
+			/>
+
+			<!-- WiFi row -->
+			<lv_label
+				x="12"
+				y="124"
+				width="80"
+				text="WiFi"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="128"
+				y="124"
+				width="86"
+				text="-48 dBm"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				x="12"
+				y="146"
+				width="204"
+				text="All outputs responding"
+				long_mode="clip"
+				style_text_color="#COLOR_SUCCESS_GREEN"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- SERVICE NOTE CARD                                         -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="8"
+			y="218"
+			width="300"
+			height="54"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_MUTED_GRAY"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="0"
+		>
+			<lv_label
+				x="12"
+				y="9"
+				width="260"
+				text="Diagnostics are for service mode"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_label
+				x="12"
+				y="28"
+				width="260"
+				text="Use self test before deployment."
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+
+		<!-- ========================================================= -->
+		<!-- RUN SELF TEST BUTTON                                      -->
+		<!-- ========================================================= -->
+		<lv_obj
+			x="316"
+			y="218"
+			width="156"
+			height="54"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="10"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_ALERT_RED"
+		>
+			<lv_label
+				x="0"
+				y="19"
+				width="156"
+				text="RUN SELF TEST"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_ALERT_RED"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
+	</view>
+</screen>
+
+

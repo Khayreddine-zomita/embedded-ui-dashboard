@@ -1,0 +1,49 @@
+﻿<component>
+	<api>
+		<prop name="trend_min" type="int" />
+		<prop name="trend_max" type="int" />
+		<prop name="trend_color" type="color" />
+	</api>
+
+	<view
+		width="112"
+		height="26"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_opa="0"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<lv_chart
+			name="sensor_trend_chart"
+			x="0"
+			y="0"
+			width="112"
+			height="26"
+			type="line"
+			point_count="8"
+			hor_div_line_count="0"
+			ver_div_line_count="0"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_opa="0"
+			style_radius="0"
+			style_pad_all="1"
+			style_border_width="0"
+			style_line_opa="0"
+			style_line_width-items="1"
+			style_width-items="1"
+			style_height-items="1"
+			style_radius-items="1"
+			style_bg_color-items="$trend_color"
+			style_bg_opa-items="255"
+		>
+			<lv_chart-axis axis="primary_y" min_value="$trend_min" max_value="$trend_max" />
+
+			<lv_chart-series color="$trend_color" axis="primary_y" values="52 58 54 62 57 66 60 72" />
+		</lv_chart>
+	</view>
+</component>
+
+

@@ -1,0 +1,37 @@
+<screen name="screen_led">
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
+
+		<led_overview_card
+			x="14"
+			y="58"
+			led_status="ACTIVE"
+			led_profile="Standard"
+			led_window="06:00 - 22:00"
+			led_hours="16 h"
+			led_intensity="80%"
+		/>
+
+		<led_edit_settings_button_card x="8" y="230" button_text="Edit LED settings" />
+
+		<global_bottom_nav
+			x="0"
+			y="280"
+			nav_home_text_color="#COLOR_DARK_FOREST"
+			nav_sensors_text_color="#COLOR_DARK_FOREST"
+			nav_irrigation_text_color="#COLOR_DARK_FOREST"
+			nav_led_text_color="#COLOR_STATUS_HEALTHY"
+			nav_settings_text_color="#COLOR_DARK_FOREST"
+		/>
+	</view>
+</screen>

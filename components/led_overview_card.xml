@@ -1,0 +1,153 @@
+<component>
+	<api>
+		<prop name="led_status" type="string" />
+		<prop name="led_profile" type="string" />
+		<prop name="led_window" type="string" />
+		<prop name="led_hours" type="string" />
+		<prop name="led_intensity" type="string" />
+	</api>
+
+	<view
+		width="452"
+		height="165"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="20"
+		style_pad_all="0"
+		style_border_width="1"
+		style_border_color="#COLOR_STATUS_WARNING"
+		style_shadow_width="10"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="4"
+	>
+		<!-- Status pill -->
+		<lv_obj
+			name="led_overview_status_pill"
+			x="22"
+			y="18"
+			width="98"
+			height="24"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_LIGHT_GREEN"
+			style_bg_opa="255"
+			style_radius="12"
+			style_border_width="0"
+			style_pad_all="0"
+		>
+			<lv_obj
+				name="led_overview_status_dot"
+				x="13"
+				y="9"
+				width="6"
+				height="6"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_GL_GREEN"
+				style_bg_opa="255"
+				style_radius="3"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+
+			<lv_label
+				name="led_overview_status_label"
+				x="28"
+				y="6"
+				width="62"
+				text="$led_status"
+				long_mode="clip"
+				style_text_color="#COLOR_PRIMARY_GREEN"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+
+		<!-- Profile pill -->
+		<lv_obj
+			name="led_overview_profile_pill"
+			x="330"
+			y="18"
+			width="88"
+			height="24"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_WARNING_BG"
+			style_bg_opa="255"
+			style_radius="12"
+			style_border_width="0"
+			style_pad_all="0"
+		>
+			<lv_label
+				name="led_overview_profile_label"
+				x="0"
+				y="6"
+				width="88"
+				text="$led_profile"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_STATUS_WARNING"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+
+		<!-- Main LED window -->
+		<lv_label
+			name="led_overview_window_label"
+			x="22"
+			y="64"
+			width="300"
+			text="$led_window"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_26"
+		/>
+
+		<!-- Metrics -->
+		<lv_label
+			name="led_overview_hours_value_label"
+			x="22"
+			y="112"
+			width="80"
+			text="$led_hours"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_15"
+		/>
+
+		<lv_label
+			name="led_overview_hours_caption_label"
+			x="22"
+			y="134"
+			width="90"
+			text="PER DAY"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_label
+			name="led_overview_intensity_value_label"
+			x="106"
+			y="112"
+			width="80"
+			text="$led_intensity"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_15"
+		/>
+
+		<lv_label
+			name="led_overview_intensity_caption_label"
+			x="106"
+			y="134"
+			width="90"
+			text="INTENSITY"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_10"
+		/>
+	</view>
+</component>

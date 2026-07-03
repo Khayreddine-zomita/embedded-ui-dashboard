@@ -1,0 +1,257 @@
+﻿<component>
+	<api>
+		<prop name="intensity_value" type="string" />
+		<prop name="slider_value" type="int" />
+
+		<prop name="seedling_bg_color" type="color" />
+		<prop name="seedling_text_color" type="color" />
+
+		<prop name="vegetative_bg_color" type="color" />
+		<prop name="vegetative_text_color" type="color" />
+
+		<prop name="bloom_bg_color" type="color" />
+		<prop name="bloom_text_color" type="color" />
+
+		<prop name="custom_bg_color" type="color" />
+		<prop name="custom_text_color" type="color" />
+
+		<prop name="off_bg_color" type="color" />
+		<prop name="off_text_color" type="color" />
+	</api>
+
+	<view
+		width="228"
+		height="158"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_CARD_BG"
+		style_bg_opa="255"
+		style_radius="16"
+		style_pad_all="0"
+		style_border_width="0"
+		style_shadow_width="8"
+		style_shadow_opa="18"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="3"
+	>
+		<lv_image
+			name="led_preset_icon"
+			x="14"
+			y="12"
+			width="20"
+			height="20"
+			src="img_nav_light"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_PRIMARY_GREEN"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="led_preset_title_label"
+			x="44"
+			y="13"
+			width="110"
+			text="PRESET"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+		/>
+
+		<lv_button
+			name="led_preset_seedling_btn"
+			x="12"
+			y="44"
+			width="62"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$seedling_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="led_preset_seedling_label"
+				x="0"
+				y="8"
+				width="62"
+				text="Seedling"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$seedling_text_color"
+				style_text_font="font_inter_9"
+			/>
+		</lv_button>
+
+		<lv_button
+			name="led_preset_vegetative_btn"
+			x="82"
+			y="44"
+			width="62"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$vegetative_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="0"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="led_preset_vegetative_label"
+				x="0"
+				y="8"
+				width="62"
+				text="Veg"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$vegetative_text_color"
+				style_text_font="font_inter_9"
+			/>
+		</lv_button>
+
+		<lv_button
+			name="led_preset_bloom_btn"
+			x="152"
+			y="44"
+			width="62"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$bloom_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="led_preset_bloom_label"
+				x="0"
+				y="8"
+				width="62"
+				text="Bloom"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$bloom_text_color"
+				style_text_font="font_inter_9"
+			/>
+		</lv_button>
+
+		<lv_button
+			name="led_preset_custom_btn"
+			x="12"
+			y="80"
+			width="96"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$custom_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="led_preset_custom_label"
+				x="0"
+				y="8"
+				width="96"
+				text="Custom"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$custom_text_color"
+				style_text_font="font_inter_9"
+			/>
+		</lv_button>
+
+		<lv_button
+			name="led_preset_off_btn"
+			x="118"
+			y="80"
+			width="96"
+			height="28"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$off_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+			style_shadow_width="0"
+		>
+			<lv_label
+				name="led_preset_off_label"
+				x="0"
+				y="8"
+				width="96"
+				text="Off"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$off_text_color"
+				style_text_font="font_inter_9"
+			/>
+		</lv_button>
+
+		<lv_label
+			name="led_intensity_title_label"
+			x="12"
+			y="118"
+			width="90"
+			text="INTENSITY"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_11"
+		/>
+
+		<lv_label
+			name="led_intensity_value_label"
+			x="168"
+			y="111"
+			width="46"
+			text="$intensity_value"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_15"
+		/>
+
+		<lv_slider
+			name="led_intensity_slider"
+			x="12"
+			y="142"
+			width="202"
+			height="8"
+			min_value="0"
+			max_value="100"
+			value="$slider_value"
+			mode="normal"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_radius="4"
+			style_border_width="0"
+			style_pad_all="0"
+			style_bg_color-indicator="#COLOR_PRIMARY_GREEN"
+			style_bg_opa-indicator="255"
+			style_radius-indicator="4"
+			style_bg_color-knob="#COLOR_CARD_BG"
+			style_bg_opa-knob="255"
+			style_radius-knob="9"
+			style_border_width-knob="1"
+			style_border_color-knob="#COLOR_TEXT_SECONDARY"
+		/>
+	</view>
+</component>
+
+
