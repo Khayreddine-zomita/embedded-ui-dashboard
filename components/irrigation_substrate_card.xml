@@ -45,7 +45,7 @@
 			<lv_button
 				name="irrigation_substrate_soil_mixed_btn"
 				x="18"
-				y="10"
+				y="6"
 				width="416"
 				height="32"
 				scrollable="false"
@@ -111,7 +111,7 @@
 			<lv_button
 				name="irrigation_substrate_coco_coir_btn"
 				x="18"
-				y="47"
+				y="43"
 				width="416"
 				height="32"
 				scrollable="false"
@@ -177,7 +177,7 @@
 			<lv_button
 				name="irrigation_substrate_rockwool_btn"
 				x="18"
-				y="84"
+				y="80"
 				width="416"
 				height="32"
 				scrollable="false"
@@ -243,7 +243,7 @@
 			<lv_button
 				name="irrigation_substrate_clay_pebbles_btn"
 				x="18"
-				y="121"
+				y="117"
 				width="416"
 				height="32"
 				scrollable="false"
@@ -309,7 +309,7 @@
 			<lv_button
 				name="irrigation_substrate_hydroponic_btn"
 				x="18"
-				y="158"
+				y="154"
 				width="416"
 				height="32"
 				scrollable="false"
