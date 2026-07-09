@@ -12,11 +12,11 @@
 	>
 		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
 
-		<screen_led_settings_presets x="14" y="48" />
+		<led_settings_presets x="14" y="48" />
 
-		<screen_led_settings_schedule x="152" y="48" lights_on_text="06:00" lights_off_text="22:00" />
+		<led_settings_schedule x="152" y="48" lights_on_text="06:00" lights_off_text="22:00" />
 
-		<screen_led_settings_intensity x="152" y="164" brightness_text="80%" />
+		<led_settings_intensity x="152" y="164" brightness_text="80%" />
 
 		<led_settings_bottom_actions x="14" y="275" cancel_text="Cancel" apply_text="Apply LED" />
 	</view>

@@ -526,7 +526,7 @@
 					src="img_simple_chevron_icon_1"
 					scrollable="false"
 					scrollbar_mode="off"
-					style_image_recolor="#COLOR_TEXT_SECONDARY"
+					style_image_recolor="#COLOR_ALERT_RED"
 					style_image_recolor_opa="255"
 				/>
 			</lv_button>
