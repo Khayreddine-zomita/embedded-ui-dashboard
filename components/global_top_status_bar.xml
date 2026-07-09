@@ -7,7 +7,7 @@
 
 	<view
 		width="480"
-		height="44"
+		height="40"
 		scrollable="false"
 		scrollbar_mode="off"
 		style_bg_color="#COLOR_APP_BG"
