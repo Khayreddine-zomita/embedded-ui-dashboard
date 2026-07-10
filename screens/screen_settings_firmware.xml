@@ -1,0 +1,26 @@
+<screen name="screen_settings_firmware">
+	<view
+		width="480"
+		height="320"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_APP_BG"
+		style_bg_opa="255"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" bar_wifi="WiFi" />
+
+		<settings_firmware_card
+			x="14"
+			y="52"
+			current_version="v0.1.0"
+			latest_version="v0.1.1"
+			update_status="Update available"
+			last_checked="Today 13:18"
+		/>
+
+		<settings_firmware_bottom_actions x="14" y="275" back_text="Back" action_text="Install Update" />
+	</view>
+</screen>

@@ -1,0 +1,217 @@
+<component>
+	<api>
+		<prop name="current_language" type="string" />
+		<prop name="status_text" type="string" />
+	</api>
+
+	<view
+		width="452"
+		height="217"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_opa="0"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<lv_label
+			name="settings_language_title_label"
+			x="2"
+			y="0"
+			width="260"
+			text="LANGUAGE"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+			style_text_letter_space="1"
+		/>
+
+		<lv_label
+			name="settings_language_subtitle_label"
+			x="250"
+			y="2"
+			width="198"
+			text="$status_text"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_11"
+		/>
+
+		<lv_obj
+			name="settings_language_card"
+			x="0"
+			y="24"
+			width="452"
+			height="146"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="18"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_shadow_width="8"
+			style_shadow_opa="16"
+			style_shadow_color="#COLOR_SHADOW"
+			style_shadow_offset_y="3"
+		>
+			<!-- Current language -->
+			<lv_label
+				name="settings_language_current_title_label"
+				x="18"
+				y="12"
+				width="180"
+				text="Current language"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				name="settings_language_current_value_label"
+				x="230"
+				y="12"
+				width="180"
+				text="$current_language"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+
+			<lv_obj
+				name="settings_language_divider_1"
+				x="18"
+				y="39"
+				width="416"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+
+			<!-- Language selector -->
+			<lv_label
+				name="settings_language_select_title_label"
+				x="18"
+				y="55"
+				width="180"
+				text="Interface language"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_dropdown
+				name="settings_language_dropdown"
+				x="262"
+				y="48"
+				width="152"
+				height="30"
+				options="English&#10;Italiano&#10;Français"
+				selected="0"
+				symbol="img_simple_chevron_icon_1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DARK_FOREST"
+				style_bg_opa="255"
+				style_radius="10"
+				style_border_width="0"
+				style_pad_left="10"
+				style_pad_right="8"
+				style_text_color="#COLOR_WHITE"
+				style_text_font="font_inter_11"
+				style_image_recolor-indicator="#COLOR_WHITE"
+				style_image_recolor_opa-indicator="255"
+				style_transform_rotation-indicator="900"
+				style_transform_pivot_x-indicator="8"
+				style_transform_pivot_y-indicator="8"
+			>
+				<lv_dropdown-list
+					style_bg_color="#COLOR_CARD_BG"
+					style_bg_opa="255"
+					style_radius="10"
+					style_border_width="1"
+					style_border_color="#COLOR_DIVIDER"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_11"
+					style_bg_color-selected="#COLOR_LIGHT_GREEN"
+					style_bg_opa-selected="255"
+					style_text_color-selected="#COLOR_PRIMARY_GREEN"
+				/>
+			</lv_dropdown>
+
+			<lv_obj
+				name="settings_language_divider_2"
+				x="18"
+				y="94"
+				width="416"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+
+			<!-- Apply note -->
+			<lv_label
+				name="settings_language_apply_title_label"
+				x="18"
+				y="110"
+				width="170"
+				text="Apply behavior"
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+
+			<lv_label
+				name="settings_language_apply_value_label"
+				x="214"
+				y="110"
+				width="196"
+				text="After saving"
+				long_mode="clip"
+				style_text_align="right"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_11"
+			/>
+		</lv_obj>
+
+		<!-- Helper note -->
+		<lv_obj
+			name="settings_language_note_card"
+			x="0"
+			y="180"
+			width="452"
+			height="37"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_SOFT_SURFACE"
+			style_bg_opa="255"
+			style_radius="14"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				name="settings_language_note_label"
+				x="16"
+				y="8"
+				width="420"
+				height="22"
+				text="Language changes affect the local display interface."
+				long_mode="clip"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+	</view>
+</component>

@@ -1,0 +1,157 @@
+<component>
+	<api>
+		<prop name="acceptance_status" type="string" />
+	</api>
+
+	<view
+		width="452"
+		height="217"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_opa="0"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<lv_label
+			name="settings_terms_title_label"
+			x="2"
+			y="0"
+			width="260"
+			text="LEGAL DOCUMENTS"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+			style_text_letter_space="1"
+		/>
+
+		<lv_label
+			name="settings_terms_subtitle_label"
+			x="250"
+			y="2"
+			width="198"
+			text="$acceptance_status"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_11"
+		/>
+
+		<!-- Terms & Conditions QR card -->
+		<lv_obj
+			name="settings_terms_conditions_card"
+			x="0"
+			y="24"
+			width="216"
+			height="156"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="18"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_shadow_width="8"
+			style_shadow_opa="16"
+			style_shadow_color="#COLOR_SHADOW"
+			style_shadow_offset_y="3"
+		>
+			<lv_image
+				name="settings_terms_conditions_qr_image"
+				x="60"
+				y="24"
+				width="96"
+				height="96"
+				src="img_qr_terms_conditions_1"
+				scrollable="false"
+				scrollbar_mode="off"
+			/>
+
+			<lv_label
+				name="settings_terms_conditions_title_label"
+				x="14"
+				y="128"
+				width="188"
+				text="Terms &amp; Conditions"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
+
+		<!-- Privacy Policy QR card -->
+		<lv_obj
+			name="settings_privacy_policy_card"
+			x="236"
+			y="24"
+			width="216"
+			height="156"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="18"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_shadow_width="8"
+			style_shadow_opa="16"
+			style_shadow_color="#COLOR_SHADOW"
+			style_shadow_offset_y="3"
+		>
+			<lv_image
+				name="settings_privacy_policy_qr_image"
+				x="60"
+				y="24"
+				width="96"
+				height="96"
+				src="img_qr_privacy_policy_1"
+				scrollable="false"
+				scrollbar_mode="off"
+			/>
+
+			<lv_label
+				name="settings_privacy_policy_title_label"
+				x="14"
+				y="128"
+				width="188"
+				text="Privacy Policy"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_PRIMARY"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
+
+		<!-- Helper note -->
+		<lv_obj
+			name="settings_terms_note_card"
+			x="0"
+			y="190"
+			width="452"
+			height="27"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_SOFT_SURFACE"
+			style_bg_opa="255"
+			style_radius="12"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+		>
+			<lv_label
+				name="settings_terms_note_label"
+				x="14"
+				y="7"
+				width="424"
+				text="Scan each QR code to read the full legal document."
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="#COLOR_TEXT_SECONDARY"
+				style_text_font="font_inter_10"
+			/>
+		</lv_obj>
+	</view>
+</component>

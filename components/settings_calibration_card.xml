@@ -1,0 +1,276 @@
+<component>
+	<api>
+		<prop name="ph_status" type="string" />
+		<prop name="ec_status" type="string" />
+		<prop name="load_cell_status" type="string" />
+	</api>
+
+	<view
+		width="452"
+		height="217"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_opa="0"
+		style_pad_all="0"
+		style_border_width="0"
+		style_radius="0"
+	>
+		<lv_label
+			name="settings_calibration_title_label"
+			x="2"
+			y="0"
+			width="260"
+			text="CALIBRATION"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_14"
+			style_text_letter_space="1"
+		/>
+
+		<lv_label
+			name="settings_calibration_subtitle_label"
+			x="250"
+			y="2"
+			width="198"
+			text="3 sensors"
+			long_mode="clip"
+			style_text_align="right"
+			style_text_color="#COLOR_TEXT_SECONDARY"
+			style_text_font="font_inter_11"
+		/>
+
+		<lv_obj
+			name="settings_calibration_card"
+			x="0"
+			y="35"
+			width="452"
+			height="146"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_CARD_BG"
+			style_bg_opa="255"
+			style_radius="18"
+			style_pad_all="0"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_shadow_width="8"
+			style_shadow_opa="16"
+			style_shadow_color="#COLOR_SHADOW"
+			style_shadow_offset_y="3"
+		>
+			<!-- pH calibration -->
+			<lv_button
+				name="settings_calibration_ph_btn"
+				x="0"
+				y="0"
+				width="452"
+				height="48"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_opa="0"
+				style_border_width="0"
+				style_shadow_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					name="settings_calibration_ph_title_label"
+					x="18"
+					y="9"
+					width="180"
+					text="pH Calibration"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_12"
+				/>
+
+				<lv_label
+					name="settings_calibration_ph_desc_label"
+					x="18"
+					y="27"
+					width="230"
+					text="Buffer point calibration"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_SECONDARY"
+					style_text_font="font_inter_10"
+				/>
+
+				<lv_label
+					name="settings_calibration_ph_status_label"
+					x="250"
+					y="17"
+					width="120"
+					text="$ph_status"
+					long_mode="clip"
+					style_text_align="right"
+					style_text_color="#COLOR_STATUS_WARNING"
+					style_text_font="font_inter_11"
+				/>
+
+				<lv_image
+					name="settings_calibration_ph_chevron_icon"
+					x="416"
+					y="16"
+					width="16"
+					height="16"
+					src="img_simple_chevron_icon_1"
+					scrollable="false"
+					scrollbar_mode="off"
+					style_image_recolor="#COLOR_TEXT_SECONDARY"
+					style_image_recolor_opa="255"
+				/>
+			</lv_button>
+
+			<lv_obj
+				name="settings_calibration_divider_1"
+				x="18"
+				y="48"
+				width="416"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+
+			<!-- EC calibration -->
+			<lv_button
+				name="settings_calibration_ec_btn"
+				x="0"
+				y="49"
+				width="452"
+				height="48"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_opa="0"
+				style_border_width="0"
+				style_shadow_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					name="settings_calibration_ec_title_label"
+					x="18"
+					y="9"
+					width="180"
+					text="EC Calibration"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_12"
+				/>
+
+				<lv_label
+					name="settings_calibration_ec_desc_label"
+					x="18"
+					y="27"
+					width="240"
+					text="Conductivity solution calibration"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_SECONDARY"
+					style_text_font="font_inter_10"
+				/>
+
+				<lv_label
+					name="settings_calibration_ec_status_label"
+					x="250"
+					y="17"
+					width="120"
+					text="$ec_status"
+					long_mode="clip"
+					style_text_align="right"
+					style_text_color="#COLOR_STATUS_WARNING"
+					style_text_font="font_inter_11"
+				/>
+
+				<lv_image
+					name="settings_calibration_ec_chevron_icon"
+					x="416"
+					y="16"
+					width="16"
+					height="16"
+					src="img_simple_chevron_icon_1"
+					scrollable="false"
+					scrollbar_mode="off"
+					style_image_recolor="#COLOR_TEXT_SECONDARY"
+					style_image_recolor_opa="255"
+				/>
+			</lv_button>
+
+			<lv_obj
+				name="settings_calibration_divider_2"
+				x="18"
+				y="97"
+				width="416"
+				height="1"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_color="#COLOR_DIVIDER"
+				style_bg_opa="255"
+				style_border_width="0"
+				style_pad_all="0"
+			/>
+
+			<!-- Load cell calibration -->
+			<lv_button
+				name="settings_calibration_load_cell_btn"
+				x="0"
+				y="98"
+				width="452"
+				height="48"
+				scrollable="false"
+				scrollbar_mode="off"
+				style_bg_opa="0"
+				style_border_width="0"
+				style_shadow_width="0"
+				style_pad_all="0"
+			>
+				<lv_label
+					name="settings_calibration_load_cell_title_label"
+					x="18"
+					y="9"
+					width="190"
+					text="Load Cell"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_PRIMARY"
+					style_text_font="font_inter_12"
+				/>
+
+				<lv_label
+					name="settings_calibration_load_cell_desc_label"
+					x="18"
+					y="27"
+					width="250"
+					text="Tank weight tare and scale"
+					long_mode="clip"
+					style_text_color="#COLOR_TEXT_SECONDARY"
+					style_text_font="font_inter_10"
+				/>
+
+				<lv_label
+					name="settings_calibration_load_cell_status_label"
+					x="250"
+					y="17"
+					width="120"
+					text="$load_cell_status"
+					long_mode="clip"
+					style_text_align="right"
+					style_text_color="#COLOR_PRIMARY_GREEN"
+					style_text_font="font_inter_11"
+				/>
+
+				<lv_image
+					name="settings_calibration_load_cell_chevron_icon"
+					x="416"
+					y="16"
+					width="16"
+					height="16"
+					src="img_simple_chevron_icon_1"
+					scrollable="false"
+					scrollbar_mode="off"
+					style_image_recolor="#COLOR_TEXT_SECONDARY"
+					style_image_recolor_opa="255"
+				/>
+			</lv_button>
+		</lv_obj>
+	</view>
+</component>

@@ -302,6 +302,9 @@
 				style_text_font="font_inter_11"
 				style_image_recolor-indicator="#COLOR_WHITE"
 				style_image_recolor_opa-indicator="255"
+				style_transform_rotation-indicator="-900"
+				style_transform_pivot_x-indicator="8"
+				style_transform_pivot_y-indicator="8"
 			>
 				<lv_dropdown-list
 					style_bg_color="#COLOR_CARD_BG"
