@@ -26,16 +26,7 @@
 		style_radius="0"
 	>
 		<!-- Top identity row -->
-		<lv_image
-			name="screen_saver_logo"
-			x="0"
-			y="2"
-			width="32"
-			height="32"
-			src="img_gl_towers_logo_1"
-			scrollable="false"
-			scrollbar_mode="off"
-		/>
+		<lv_image name="screen_saver_logo" x="0" y="2" width="32" height="32" scrollable="false" scrollbar_mode="off" />
 
 		<lv_label
 			name="screen_saver_brand_label"

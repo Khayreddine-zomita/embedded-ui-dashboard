@@ -13,13 +13,12 @@ extern "C" {
  *      INCLUDES
  *********************/
 
-#include "gl_towers_embedded_ui_gen.h"
+#include "gl_towers_embedded_ui_dashboard_gen.h"
 #include "src/gl_towers_ui_contract.h"
 #include "src/state/gl_towers_state.h"
 #include "src/commands/gl_towers_commands.h"
 #include "src/utils/gl_towers_utils.h"
 #include "src/ui_binding/gl_towers_ui_binding.h"
-#include "src/gl_towers_mock_state.h"
 
 /*********************
  *      DEFINES

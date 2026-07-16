@@ -4,140 +4,34 @@
 		height="320"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_DARK_FOREST"
+		style_bg_color="#COLOR_BOOT_BLACK"
 		style_bg_opa="255"
 		style_pad_all="0"
 		style_border_width="0"
 		style_radius="0"
 	>
-		<!-- Soft background glow -->
-		<lv_obj
-			name="boot_glow_circle"
-			x="170"
-			y="48"
-			width="140"
-			height="140"
+		<!-- Main boot logo image -->
+		<lv_image
+			name="boot_logo_image"
+			x="90"
+			y="10"
+			width="300"
+			height="300"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_color="#COLOR_GL_GREEN"
-			style_bg_opa="35"
-			style_radius="70"
-			style_border_width="0"
-			style_pad_all="0"
 		/>
 
-		<!-- Logo holder -->
-		<lv_obj
-			name="boot_logo_holder"
-			x="216"
-			y="82"
-			width="48"
-			height="48"
-			scrollable="false"
-			scrollbar_mode="off"
-			style_bg_color="#COLOR_CARD_BG"
-			style_bg_opa="255"
-			style_radius="24"
-			style_border_width="0"
-			style_shadow_width="10"
-			style_shadow_opa="35"
-			style_shadow_color="#COLOR_SHADOW"
-			style_shadow_offset_y="4"
-			style_pad_all="0"
-		>
-			<lv_image
-				name="boot_logo_image"
-				x="12"
-				y="12"
-				width="24"
-				height="24"
-				src="img_gl_towers_logo_1"
-				scrollable="false"
-				scrollbar_mode="off"
-			/>
-		</lv_obj>
-
-		<!-- Brand title -->
-		<lv_label
-			name="boot_title_label"
-			x="0"
-			y="146"
-			width="480"
-			text="GL TOWERS"
-			long_mode="clip"
-			style_text_align="center"
-			style_text_color="#COLOR_WHITE"
-			style_text_font="font_inter_26"
-		/>
-
-		<lv_label
-			name="boot_subtitle_label"
-			x="0"
-			y="178"
-			width="480"
-			text="Hydroponic Intelligence"
-			long_mode="clip"
-			style_text_align="center"
-			style_text_color="#COLOR_LIGHT_GREEN"
-			style_text_font="font_inter_12"
-		/>
-
-		<!-- Loading text -->
+		<!-- Boot status -->
 		<lv_label
 			name="boot_status_label"
 			x="0"
-			y="220"
+			y="300"
 			width="480"
-			text="Initializing system..."
+			text="Initializing System..."
 			long_mode="clip"
 			style_text_align="center"
 			style_text_color="#COLOR_MUTED_GRAY"
 			style_text_font="font_inter_11"
-		/>
-
-		<!-- Static progress track -->
-		<lv_obj
-			name="boot_progress_track"
-			x="150"
-			y="246"
-			width="180"
-			height="4"
-			scrollable="false"
-			scrollbar_mode="off"
-			style_bg_color="#COLOR_TEXT_SECONDARY"
-			style_bg_opa="120"
-			style_radius="2"
-			style_border_width="0"
-			style_pad_all="0"
-		/>
-
-		<!-- Progress fill, later updated from C -->
-		<lv_obj
-			name="boot_progress_fill"
-			x="150"
-			y="246"
-			width="60"
-			height="4"
-			scrollable="false"
-			scrollbar_mode="off"
-			style_bg_color="#COLOR_GL_GREEN"
-			style_bg_opa="255"
-			style_radius="2"
-			style_border_width="0"
-			style_pad_all="0"
-		/>
-
-		<!-- Firmware version -->
-		<lv_label
-			name="boot_version_label"
-			x="0"
-			y="286"
-			width="480"
-			text="Firmware v0.1.0"
-			long_mode="clip"
-			style_text_align="center"
-			style_text_color="#COLOR_TEXT_SECONDARY"
-			style_text_font="font_inter_9"
 		/>
 	</view>
 </screen>
