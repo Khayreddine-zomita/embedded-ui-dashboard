@@ -1,4 +1,4 @@
-<screen>
+<screen name="screen_sensors">
 	<view
 		width="480"
 		height="320"
@@ -16,93 +16,73 @@
 		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" />
 
 		<!-- ========================================================= -->
-		<!-- SENSOR CARDS                                              -->
+		<!-- SENSOR CARDS - PROTOTYPE 1 SENSOR SCOPE                   -->
+		<!-- pH and EC removed from first prototype                    -->
 		<!-- ========================================================= -->
+
 		<sensors_screen_card
 			x="8"
-			y="52"
-			sensor_title="pH"
-			sensor_value="6.3"
-			sensor_unit=""
-			sensor_unit_x="58"
-			sensor_status="Stable"
-			sensor_hint="Target 5.8 - 6.5"
-			sensor_color="#COLOR_STATUS_HEALTHY"
-			trend_values="54 58 55 62 59 66 63 72"
-			trend_min="40"
-			trend_max="80"
-		/>
-
-		<sensors_screen_card
-			x="165"
-			y="52"
-			sensor_title="EC"
-			sensor_value="1.6"
-			sensor_unit=""
-			sensor_unit_x="58"
-			sensor_status="Optimal"
-			sensor_hint="Target 1.2 - 2.0"
-			sensor_color="#COLOR_STATUS_INFO"
-			trend_values="46 52 48 57 51 61 55 66"
-			trend_min="40"
-			trend_max="80"
-		/>
-
-		<sensors_screen_card
-			x="322"
 			y="52"
 			sensor_title="WATER TEMP"
 			sensor_value="22.3"
 			sensor_unit="°C"
-			sensor_unit_x="66"
+			sensor_unit_x="74"
 			sensor_status="Optimal"
 			sensor_hint="Target 18 - 23 C"
 			sensor_color="#COLOR_STATUS_INFO"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+			sensor_status_bg_color="#COLOR_LIGHT_GREEN"
 			trend_values="48 52 50 55 53 58 56 62"
 			trend_min="40"
 			trend_max="80"
 		/>
 
 		<sensors_screen_card
-			x="8"
-			y="164"
+			x="246"
+			y="52"
 			sensor_title="AIR TEMP"
 			sensor_value="23.0"
 			sensor_unit="°C"
-			sensor_unit_x="66"
+			sensor_unit_x="74"
 			sensor_status="Good"
 			sensor_hint="Target 16 - 24 C"
-			sensor_color="#COLOR_STATUS_CRITICAL"
+			sensor_color="#COLOR_ALERT_ORANGE"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+			sensor_status_bg_color="#COLOR_LIGHT_GREEN"
 			trend_values="50 53 52 56 54 58 57 61"
 			trend_min="40"
 			trend_max="80"
 		/>
 
 		<sensors_screen_card
-			x="165"
+			x="8"
 			y="164"
 			sensor_title="HUMIDITY"
 			sensor_value="71"
 			sensor_unit="%"
-			sensor_unit_x="38"
+			sensor_unit_x="48"
 			sensor_status="Good"
 			sensor_hint="Target 80 - 99%"
 			sensor_color="#COLOR_PURPLE"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+			sensor_status_bg_color="#COLOR_LIGHT_GREEN"
 			trend_values="52 55 54 58 57 61 59 64"
 			trend_min="40"
 			trend_max="80"
 		/>
 
 		<sensors_screen_card
-			x="322"
+			x="246"
 			y="164"
 			sensor_title="TANK WEIGHT"
 			sensor_value="6.0"
 			sensor_unit="L"
-			sensor_unit_x="52"
+			sensor_unit_x="58"
 			sensor_status="Normal"
-			sensor_hint="Trend 24h"
-			sensor_color="#COLOR_STATUS_HEALTHY"
+			sensor_hint="Estimated volume"
+			sensor_color="#COLOR_PRIMARY_GREEN"
+			sensor_status_color="#COLOR_STATUS_HEALTHY"
+			sensor_status_bg_color="#COLOR_LIGHT_GREEN"
 			trend_values="72 70 68 66 65 63 61 60"
 			trend_min="40"
 			trend_max="80"

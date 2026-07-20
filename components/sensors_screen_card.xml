@@ -1,4 +1,4 @@
-﻿<component>
+<component>
 	<api>
 		<prop name="sensor_title" type="string" />
 		<prop name="sensor_value" type="string" />
@@ -7,42 +7,88 @@
 		<prop name="sensor_status" type="string" />
 		<prop name="sensor_hint" type="string" />
 		<prop name="sensor_color" type="color" />
+		<prop name="sensor_status_color" type="color" />
+		<prop name="sensor_status_bg_color" type="color" />
 		<prop name="trend_values" type="string" />
 		<prop name="trend_min" type="int" />
 		<prop name="trend_max" type="int" />
 	</api>
 
 	<view
-		width="150"
+		width="226"
 		height="104"
 		scrollable="false"
 		scrollbar_mode="off"
 		style_bg_color="#COLOR_CARD_BG"
 		style_bg_opa="255"
-		style_radius="16"
+		style_radius="18"
 		style_pad_all="0"
-		style_border_width="0"
+		style_border_width="1"
+		style_border_color="#COLOR_DIVIDER"
 		style_shadow_width="10"
-		style_shadow_opa="22"
+		style_shadow_opa="18"
 		style_shadow_color="#COLOR_SHADOW"
 		style_shadow_offset_y="4"
 	>
+		<lv_obj
+			name="sensor_card_accent_bar"
+			x="0"
+			y="14"
+			width="4"
+			height="76"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$sensor_color"
+			style_bg_opa="255"
+			style_radius="2"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
 		<lv_label
 			name="sensor_card_title"
-			x="10"
-			y="8"
-			width="110"
+			x="14"
+			y="9"
+			width="118"
 			text="$sensor_title"
 			long_mode="clip"
 			style_text_color="$sensor_color"
 			style_text_font="font_inter_12"
+			style_text_letter_space="1"
 		/>
+
+		<lv_obj
+			name="sensor_card_status_pill"
+			x="142"
+			y="8"
+			width="70"
+			height="22"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="$sensor_status_bg_color"
+			style_bg_opa="255"
+			style_radius="8"
+			style_border_width="0"
+			style_pad_all="0"
+		>
+			<lv_label
+				name="sensor_card_status"
+				x="0"
+				y="3"
+				width="70"
+				text="$sensor_status"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$sensor_status_color"
+				style_text_font="font_inter_12"
+			/>
+		</lv_obj>
 
 		<lv_label
 			name="sensor_card_value"
-			x="10"
-			y="25"
-			width="78"
+			x="14"
+			y="34"
+			width="82"
 			text="$sensor_value"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
@@ -52,39 +98,42 @@
 		<lv_label
 			name="sensor_card_unit"
 			x="$sensor_unit_x"
-			y="41"
+			y="46"
 			width="34"
 			text="$sensor_unit"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
-			style_text_font="font_inter_9"
+			style_text_font="font_inter_12"
 		/>
 
-		<lv_label
-			name="sensor_card_status"
-			x="94"
-			y="42"
-			width="46"
-			text="$sensor_status"
-			long_mode="clip"
-			style_text_align="right"
-			style_text_color="#COLOR_STATUS_HEALTHY"
-			style_text_font="font_inter_10"
-		/>
-
-		<mini_trend_chart x="19" y="60" trend_min="$trend_min" trend_max="$trend_max" trend_color="$sensor_color" />
+		<lv_obj
+			name="sensor_card_trend_surface"
+			x="104"
+			y="38"
+			width="108"
+			height="42"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_SOFT_SURFACE"
+			style_bg_opa="255"
+			style_radius="12"
+			style_border_width="1"
+			style_border_color="#COLOR_DIVIDER"
+			style_pad_all="0"
+		>
+			<mini_trend_chart x="6" y="5" trend_min="$trend_min" trend_max="$trend_max" trend_color="$sensor_color" />
+		</lv_obj>
 
 		<lv_label
 			name="sensor_card_hint"
-			x="35"
-			y="90"
-			width="130"
+			x="14"
+			y="84"
+			width="198"
 			text="$sensor_hint"
 			long_mode="clip"
-			style_text_color="#COLOR_DARK_FOREST"
-			style_text_font="font_inter_10"
+			style_text_align="center"
+			style_text_color="#COLOR_SHADOW"
+			style_text_font="font_inter_12"
 		/>
 	</view>
 </component>
-
-

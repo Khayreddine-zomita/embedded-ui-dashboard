@@ -1,4 +1,4 @@
-﻿<component>
+<component>
 	<api>
 		<prop name="trend_min" type="int" />
 		<prop name="trend_max" type="int" />
@@ -6,8 +6,8 @@
 	</api>
 
 	<view
-		width="112"
-		height="26"
+		width="96"
+		height="32"
 		scrollable="false"
 		scrollbar_mode="off"
 		style_bg_opa="0"
@@ -15,12 +15,55 @@
 		style_border_width="0"
 		style_radius="0"
 	>
+		<!-- Subtle readability grid -->
+		<lv_obj
+			name="trend_grid_line_top"
+			x="0"
+			y="7"
+			width="96"
+			height="1"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="120"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			name="trend_grid_line_mid"
+			x="0"
+			y="16"
+			width="96"
+			height="1"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="160"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			name="trend_grid_line_bottom"
+			x="0"
+			y="25"
+			width="96"
+			height="1"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="120"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
 		<lv_chart
 			name="sensor_trend_chart"
 			x="0"
 			y="0"
-			width="112"
-			height="26"
+			width="96"
+			height="32"
 			type="line"
 			point_count="8"
 			hor_div_line_count="0"
@@ -29,13 +72,17 @@
 			scrollbar_mode="off"
 			style_bg_opa="0"
 			style_radius="0"
-			style_pad_all="1"
+			style_pad_left="2"
+			style_pad_right="2"
+			style_pad_top="3"
+			style_pad_bottom="3"
 			style_border_width="0"
 			style_line_opa="0"
-			style_line_width-items="1"
-			style_width-items="1"
-			style_height-items="1"
-			style_radius-items="1"
+			style_line_width-items="2"
+			style_line_opa-items="255"
+			style_width-items="4"
+			style_height-items="4"
+			style_radius-items="2"
 			style_bg_color-items="$trend_color"
 			style_bg_opa-items="255"
 		>
@@ -45,5 +92,3 @@
 		</lv_chart>
 	</view>
 </component>
-
-
