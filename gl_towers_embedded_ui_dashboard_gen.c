@@ -57,6 +57,8 @@ lv_font_t * font_inter_14;
 extern lv_font_t font_inter_14_data;
 lv_font_t * font_inter_15;
 extern lv_font_t font_inter_15_data;
+lv_font_t * font_inter_18;
+extern lv_font_t font_inter_18_data;
 lv_font_t * font_inter_26;
 extern lv_font_t font_inter_26_data;
 
@@ -172,6 +174,8 @@ void gl_towers_embedded_ui_dashboard_init_gen(const char * asset_path)
     font_inter_14 = &font_inter_14_data;
     /* get font 'font_inter_15' from a C array */
     font_inter_15 = &font_inter_15_data;
+    /* get font 'font_inter_18' from a C array */
+    font_inter_18 = &font_inter_18_data;
     /* get font 'font_inter_26' from a C array */
     font_inter_26 = &font_inter_26_data;
 
@@ -236,6 +240,7 @@ void gl_towers_embedded_ui_dashboard_init_gen(const char * asset_path)
     lv_xml_register_font(NULL, "font_inter_12", font_inter_12);
     lv_xml_register_font(NULL, "font_inter_14", font_inter_14);
     lv_xml_register_font(NULL, "font_inter_15", font_inter_15);
+    lv_xml_register_font(NULL, "font_inter_18", font_inter_18);
     lv_xml_register_font(NULL, "font_inter_26", font_inter_26);
 
     /* Register subjects */

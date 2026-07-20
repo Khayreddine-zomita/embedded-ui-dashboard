@@ -139,6 +139,8 @@ extern lv_font_t * font_inter_14;
 
 extern lv_font_t * font_inter_15;
 
+extern lv_font_t * font_inter_18;
+
 extern lv_font_t * font_inter_26;
 
 /*----------------

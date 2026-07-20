@@ -70,6 +70,7 @@ list(
   ${CMAKE_CURRENT_LIST_DIR}/fonts/font_inter_12_data.c
   ${CMAKE_CURRENT_LIST_DIR}/fonts/font_inter_14_data.c
   ${CMAKE_CURRENT_LIST_DIR}/fonts/font_inter_15_data.c
+  ${CMAKE_CURRENT_LIST_DIR}/fonts/font_inter_18_data.c
   ${CMAKE_CURRENT_LIST_DIR}/fonts/font_inter_26_data.c
   ${CMAKE_CURRENT_LIST_DIR}/gl_towers_embedded_ui_dashboard_gen.c
   ${CMAKE_CURRENT_LIST_DIR}/gl_towers_embedded_ui_dashboard.c
