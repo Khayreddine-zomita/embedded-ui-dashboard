@@ -16,63 +16,39 @@
 			x="8"
 			y="52"
 			reservoir_value="56"
-			reservoir_unit_x="46"
+			reservoir_unit_x="60"
 			reservoir_volume="6.0 L / 6.5 L"
 			reservoir_hint="Tank level"
 			reservoir_level="62"
 		/>
 
 		<home_sensor_card
-			x="166"
-			y="52"
-			sensor_title="pH"
-			sensor_value="6.1"
-			sensor_unit=""
-			sensor_unit_x="58"
-			sensor_status="Optimal"
-			sensor_title_color="#COLOR_PURPLE"
-			sensor_status_color="#COLOR_STATUS_HEALTHY"
-		/>
-
-		<home_sensor_card
-			x="324"
-			y="52"
-			sensor_title="EC"
-			sensor_value="1.6"
-			sensor_unit=""
-			sensor_unit_x="58"
-			sensor_status="Optimal"
-			sensor_title_color="#COLOR_PURPLE"
-			sensor_status_color="#COLOR_STATUS_HEALTHY"
-		/>
-
-		<home_sensor_card
-			x="166"
-			y="136"
+			x="8"
+			y="166"
 			sensor_title="WATER TEMP"
 			sensor_value="22.2"
 			sensor_unit="°C"
-			sensor_unit_x="70"
+			sensor_unit_x="74"
 			sensor_status="Optimal"
 			sensor_title_color="#COLOR_STATUS_INFO"
 			sensor_status_color="#COLOR_STATUS_HEALTHY"
 		/>
 
 		<home_sensor_card
-			x="324"
-			y="136"
+			x="246"
+			y="166"
 			sensor_title="AIR TEMP"
 			sensor_value="22.8"
 			sensor_unit="°C"
-			sensor_unit_x="70"
+			sensor_unit_x="74"
 			sensor_status="Good"
-			sensor_title_color="#COLOR_STATUS_CRITICAL"
+			sensor_title_color="#COLOR_ALERT_ORANGE"
 			sensor_status_color="#COLOR_STATUS_HEALTHY"
 		/>
 
 		<home_status_row
 			x="8"
-			y="222"
+			y="234"
 			pump_status="ON"
 			irrigation_status="ON"
 			led_status="ON"

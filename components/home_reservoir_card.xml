@@ -8,8 +8,8 @@
 	</api>
 
 	<view
-		width="150"
-		height="158"
+		width="464"
+		height="104"
 		scrollable="false"
 		scrollbar_mode="off"
 		style_bg_color="#COLOR_CARD_BG"
@@ -24,33 +24,20 @@
 	>
 		<lv_label
 			name="reservoir_title_label"
-			x="12"
-			y="12"
-			width="92"
+			x="18"
+			y="10"
+			width="140"
 			text="RESERVOIR"
 			long_mode="clip"
 			style_text_color="#COLOR_PRIMARY_GREEN"
 			style_text_font="font_inter_12"
 		/>
 
-		<lv_image
-			name="reservoir_water_icon"
-			x="110"
-			y="30"
-			width="26"
-			height="26"
-			src="img_home_irrigation"
-			scrollable="false"
-			scrollbar_mode="off"
-			style_image_recolor="#COLOR_STATUS_INFO"
-			style_image_recolor_opa="255"
-		/>
-
 		<lv_label
 			name="reservoir_percent_label"
-			x="12"
-			y="48"
-			width="78"
+			x="18"
+			y="36"
+			width="80"
 			text="$reservoir_value"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
@@ -60,7 +47,7 @@
 		<lv_label
 			name="reservoir_percent_unit_label"
 			x="$reservoir_unit_x"
-			y="61"
+			y="49"
 			width="28"
 			text="%"
 			long_mode="clip"
@@ -70,9 +57,9 @@
 
 		<lv_label
 			name="reservoir_volume_label"
-			x="12"
-			y="92"
-			width="126"
+			x="158"
+			y="34"
+			width="180"
 			text="$reservoir_volume"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
@@ -81,20 +68,33 @@
 
 		<lv_label
 			name="reservoir_hint_label"
-			x="12"
-			y="110"
-			width="126"
+			x="158"
+			y="56"
+			width="200"
 			text="$reservoir_hint"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_MUTED"
-			style_text_font="font_inter_10"
+			style_text_font="font_inter_12"
+		/>
+
+		<lv_image
+			name="reservoir_water_icon"
+			x="410"
+			y="27"
+			width="28"
+			height="28"
+			src="img_home_irrigation"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_STATUS_INFO"
+			style_image_recolor_opa="255"
 		/>
 
 		<lv_bar
 			name="reservoir_level_bar"
-			x="12"
-			y="132"
-			width="126"
+			x="18"
+			y="82"
+			width="428"
 			height="8"
 			min_value="0"
 			max_value="100"

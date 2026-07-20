@@ -1,4 +1,4 @@
-﻿<component>
+<component>
 	<api>
 		<prop name="sensor_title" type="string" />
 		<prop name="sensor_value" type="string" />
@@ -10,8 +10,8 @@
 	</api>
 
 	<view
-		width="148"
-		height="74"
+		width="226"
+		height="58"
 		scrollable="false"
 		scrollbar_mode="off"
 		style_bg_color="#COLOR_CARD_BG"
@@ -26,9 +26,9 @@
 	>
 		<lv_label
 			name="home_sensor_title"
-			x="10"
+			x="12"
 			y="8"
-			width="100"
+			width="120"
 			text="$sensor_title"
 			long_mode="clip"
 			style_text_color="$sensor_title_color"
@@ -37,9 +37,9 @@
 
 		<lv_label
 			name="home_sensor_value"
-			x="10"
-			y="28"
-			width="72"
+			x="12"
+			y="25"
+			width="80"
 			text="$sensor_value"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
@@ -49,25 +49,24 @@
 		<lv_label
 			name="home_sensor_unit"
 			x="$sensor_unit_x"
-			y="41"
-			width="30"
+			y="38"
+			width="34"
 			text="$sensor_unit"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
-			style_text_font="font_inter_9"
+			style_text_font="font_inter_12"
 		/>
 
 		<lv_label
 			name="home_sensor_status"
-			x="105"
-			y="45"
-			width="40"
+			x="158"
+			y="33"
+			width="58"
 			text="$sensor_status"
 			long_mode="clip"
+			style_text_align="right"
 			style_text_color="$sensor_status_color"
-			style_text_font="font_inter_10"
+			style_text_font="font_inter_12"
 		/>
 	</view>
 </component>
-
-
