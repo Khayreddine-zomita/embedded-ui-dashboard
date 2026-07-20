@@ -1,0 +1,109 @@
+<component>
+	<api>
+		<prop name="system_status_value" type="string" />
+		<prop name="last_update_value" type="string" />
+	</api>
+
+	<view
+		width="464"
+		height="38"
+		scrollable="false"
+		scrollbar_mode="off"
+		style_bg_color="#COLOR_SOFT_SURFACE"
+		style_bg_opa="255"
+		style_radius="10"
+		style_border_width="1"
+		style_border_color="#COLOR_DIVIDER"
+		style_shadow_width="6"
+		style_shadow_opa="10"
+		style_shadow_color="#COLOR_SHADOW"
+		style_shadow_offset_y="2"
+		style_pad_all="0"
+	>
+		<lv_image
+			name="settings_status_bar_system_status_icon"
+			x="9"
+			y="5"
+			width="24"
+			height="24"
+			src="img_settings_system_status"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_GL_GREEN_DARK"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="settings_system_status_title_label"
+			x="46"
+			y="5"
+			width="140"
+			text="SYSTEM STATUS"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_11"
+			style_text_letter_space="1"
+		/>
+
+		<lv_label
+			name="settings_system_status_value_label"
+			x="46"
+			y="21"
+			width="180"
+			text="$system_status_value"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_10"
+		/>
+
+		<lv_obj
+			name="settings_status_divider"
+			x="232"
+			y="7"
+			width="1"
+			height="24"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_DIVIDER"
+			style_bg_opa="255"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_image
+			name="settings_status_bar_last_update_icon"
+			x="254"
+			y="5"
+			width="24"
+			height="24"
+			src="img_settings_last_update"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_image_recolor="#COLOR_GL_GREEN_DARK"
+			style_image_recolor_opa="255"
+		/>
+
+		<lv_label
+			name="settings_last_update_title_label"
+			x="294"
+			y="5"
+			width="130"
+			text="LAST UPDATE"
+			long_mode="clip"
+			style_text_color="#COLOR_TEXT_PRIMARY"
+			style_text_font="font_inter_11"
+			style_text_letter_space="1"
+		/>
+
+		<lv_label
+			name="settings_last_update_value_label"
+			x="294"
+			y="21"
+			width="150"
+			text="$last_update_value"
+			long_mode="clip"
+			style_text_color="#COLOR_PRIMARY_GREEN"
+			style_text_font="font_inter_10"
+		/>
+	</view>
+</component>

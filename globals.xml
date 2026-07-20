@@ -320,6 +320,40 @@
 
 		<data name="img_home_light" color_format="argb8888" src_path="images/icons/nav-light-icon-24px.png" />
 
+		<!-- Settings Card Icons -->
+		<data name="img_settings_account" color_format="argb8888" src_path="images/icons/settings_account_16px.png" />
+		<data name="img_settings_wlan" color_format="argb8888" src_path="images/icons/settings_wlan_16px.png" />
+		<data name="img_settings_device" color_format="argb8888" src_path="images/icons/settings_device_16px.png" />
+		<data
+			name="img_settings_calibration"
+			color_format="argb8888"
+			src_path="images/icons/settings_calibration_16px.png"
+		/>
+		<data name="img_settings_firmware" color_format="argb8888" src_path="images/icons/settings_firmware_16px.png" />
+		<data name="img_settings_language" color_format="argb8888" src_path="images/icons/settings_language_16px.png" />
+		<data
+			name="img_settings_terms_of_use"
+			color_format="argb8888"
+			src_path="images/icons/settings_terms of use_16px.png"
+		/>
+		<data
+			name="img_settings_factory_reset"
+			color_format="argb8888"
+			src_path="images/icons/settings_factory reset_16px.png"
+		/>
+
+		<!-- Settings Status Icons -->
+		<data
+			name="img_settings_system_status"
+			color_format="argb8888"
+			src_path="images/icons/settings_system status_24px.png"
+		/>
+		<data
+			name="img_settings_last_update"
+			color_format="argb8888"
+			src_path="images/icons/settings_last update_24px.png"
+		/>
+
 		<!-- Bottom Navigation Icons -->
 		<data name="img_nav_home" color_format="argb8888" src_path="images/icons/nav-home-icon-16px.png" />
 

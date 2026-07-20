@@ -13,14 +13,21 @@
 		<global_top_status_bar x="0" y="0" bar_title="GL TOWERS" bar_time="13:20" />
 
 		<settings_menu_card
-			x="14"
-			y="42"
+			x="8"
+			y="46"
 			account_value="Not linked"
 			wlan_value="Connected"
 			device_value="GL Tower"
 			calibration_value="3/4 done"
 			firmware_value="v0.1.0"
 			language_value="English"
+		/>
+
+		<settings_status_bar
+			x="8"
+			y="232"
+			system_status_value="All systems operational"
+			last_update_value="Today, 12:45"
 		/>
 
 		<global_bottom_nav
