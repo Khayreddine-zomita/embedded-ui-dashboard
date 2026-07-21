@@ -17,7 +17,7 @@
 	>
 		<!-- Brand title -->
 		<lv_label
-			name="status_title"
+			name="status_title_1"
 			x="10"
 			y="13"
 			width="170"
@@ -28,7 +28,7 @@
 		/>
 
 		<lv_label
-			name="status_title"
+			name="status_title_2"
 			x="30"
 			y="13"
 			width="170"

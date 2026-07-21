@@ -46,25 +46,25 @@ lv_obj_t * global_top_status_bar_create(lv_obj_t * parent, const char * bar_titl
     lv_obj_set_style_border_width(lv_obj_0, 0, 0);
     lv_obj_set_style_radius(lv_obj_0, 0, 0);
 
-    lv_obj_t * status_title = lv_label_create(lv_obj_0);
-    lv_obj_set_name(status_title, "status_title");
-    lv_obj_set_x(status_title, 10);
-    lv_obj_set_y(status_title, 13);
-    lv_obj_set_width(status_title, 170);
-    lv_label_set_text(status_title, "GL");
-    lv_label_set_long_mode(status_title, LV_LABEL_LONG_MODE_CLIP);
-    lv_obj_set_style_text_color(status_title, COLOR_STATUS_HEALTHY, 0);
-    lv_obj_set_style_text_font(status_title, font_inter_14, 0);
+    lv_obj_t * status_title_1 = lv_label_create(lv_obj_0);
+    lv_obj_set_name(status_title_1, "status_title_1");
+    lv_obj_set_x(status_title_1, 10);
+    lv_obj_set_y(status_title_1, 13);
+    lv_obj_set_width(status_title_1, 170);
+    lv_label_set_text(status_title_1, "GL");
+    lv_label_set_long_mode(status_title_1, LV_LABEL_LONG_MODE_CLIP);
+    lv_obj_set_style_text_color(status_title_1, COLOR_STATUS_HEALTHY, 0);
+    lv_obj_set_style_text_font(status_title_1, font_inter_14, 0);
 
-    lv_obj_t * status_title = lv_label_create(lv_obj_0);
-    lv_obj_set_name(status_title, "status_title");
-    lv_obj_set_x(status_title, 30);
-    lv_obj_set_y(status_title, 13);
-    lv_obj_set_width(status_title, 170);
-    lv_label_set_text(status_title, "TOWERS");
-    lv_label_set_long_mode(status_title, LV_LABEL_LONG_MODE_CLIP);
-    lv_obj_set_style_text_color(status_title, COLOR_TEXT_PRIMARY, 0);
-    lv_obj_set_style_text_font(status_title, font_inter_14, 0);
+    lv_obj_t * status_title_2 = lv_label_create(lv_obj_0);
+    lv_obj_set_name(status_title_2, "status_title_2");
+    lv_obj_set_x(status_title_2, 30);
+    lv_obj_set_y(status_title_2, 13);
+    lv_obj_set_width(status_title_2, 170);
+    lv_label_set_text(status_title_2, "TOWERS");
+    lv_label_set_long_mode(status_title_2, LV_LABEL_LONG_MODE_CLIP);
+    lv_obj_set_style_text_color(status_title_2, COLOR_TEXT_PRIMARY, 0);
+    lv_obj_set_style_text_font(status_title_2, font_inter_14, 0);
 
     lv_obj_t * status_wifi_icon = lv_image_create(lv_obj_0);
     lv_obj_set_name(status_wifi_icon, "status_wifi_icon");

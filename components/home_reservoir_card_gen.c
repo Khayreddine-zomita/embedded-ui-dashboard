@@ -124,9 +124,9 @@ lv_obj_t * home_reservoir_card_create(lv_obj_t * parent, const char * reservoir_
     lv_bar_set_value(reservoir_level_bar, reservoir_level, false);
     lv_obj_set_flag(reservoir_level_bar, LV_OBJ_FLAG_SCROLLABLE, false);
     lv_obj_set_scrollbar_mode(reservoir_level_bar, LV_SCROLLBAR_MODE_OFF);
-    lv_obj_set_style_bg_color(reservoir_level_bar, COLOR_DIVIDER, 0);
-    lv_obj_set_style_bg_opa(reservoir_level_bar, 255, 0);
-    lv_obj_set_style_radius(reservoir_level_bar, 4, 0);
+    lv_obj_set_style_bg_color(reservoir_level_bar, COLOR_DIVIDER, LV_PART_INDICATOR);
+    lv_obj_set_style_bg_opa(reservoir_level_bar, 255, LV_PART_INDICATOR);
+    lv_obj_set_style_radius(reservoir_level_bar, 4, LV_PART_INDICATOR);
     lv_obj_set_style_border_width(reservoir_level_bar, 0, 0);
     lv_obj_set_style_pad_all(reservoir_level_bar, 0, 0);
 
