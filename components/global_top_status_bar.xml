@@ -9,7 +9,7 @@
 		height="40"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_APP_BG"
+		style_bg_color="#COLOR_WHITE"
 		style_bg_opa="255"
 		style_pad_all="0"
 		style_border_width="0"
@@ -21,7 +21,18 @@
 			x="10"
 			y="13"
 			width="170"
-			text="$bar_title"
+			text="GL"
+			long_mode="clip"
+			style_text_color="#COLOR_STATUS_HEALTHY"
+			style_text_font="font_inter_14"
+		/>
+
+		<lv_label
+			name="status_title"
+			x="30"
+			y="13"
+			width="170"
+			text="TOWERS"
 			long_mode="clip"
 			style_text_color="#COLOR_TEXT_PRIMARY"
 			style_text_font="font_inter_14"
@@ -29,7 +40,7 @@
 
 		<lv_image
 			name="status_wifi_icon"
-			x="386"
+			x="420"
 			y="10"
 			width="16"
 			height="16"
@@ -42,9 +53,9 @@
 
 		<lv_label
 			name="status_time"
-			x="410"
+			x="432"
 			y="10"
-			width="62"
+			width="40"
 			text="$bar_time"
 			long_mode="clip"
 			style_text_align="right"

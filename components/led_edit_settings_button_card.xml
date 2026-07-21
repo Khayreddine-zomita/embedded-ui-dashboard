@@ -4,12 +4,12 @@
 	</api>
 
 	<view
-		width="464"
+		width="452"
 		height="48"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_CARD_BG"
-		style_bg_opa="255"
+		style_bg_color="#COLOR_STATUS_WARNING"
+		style_bg_opa="25"
 		style_radius="16"
 		style_pad_all="0"
 		style_border_width="0"
@@ -20,10 +20,10 @@
 	>
 		<lv_button
 			name="led_edit_settings_btn"
-			x="12"
-			y="8"
-			width="440"
-			height="32"
+			x="2"
+			y="2"
+			width="448"
+			height="44"
 			scrollable="false"
 			scrollbar_mode="off"
 			style_bg_opa="0"
@@ -36,7 +36,7 @@
 			<lv_label
 				name="led_edit_settings_label"
 				x="0"
-				y="6"
+				y="10"
 				width="440"
 				text="$button_text"
 				long_mode="clip"

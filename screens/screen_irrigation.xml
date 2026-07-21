@@ -4,7 +4,7 @@
 		height="320"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_APP_BG"
+		style_bg_color="#COLOR_WHITE"
 		style_bg_opa="255"
 		style_pad_all="0"
 		style_border_width="0"
@@ -27,14 +27,27 @@
 
 		<irrigation_edit_settings_button x="14" y="241" button_text="Edit irrigation settings" />
 
+		<!-- ========================================================= -->
+		<!-- BOTTOM NAVIGATION                                         -->
+		<!-- ========================================================= -->
 		<global_bottom_nav
 			x="0"
 			y="280"
-			nav_home_text_color="#COLOR_DARK_FOREST"
-			nav_sensors_text_color="#COLOR_DARK_FOREST"
-			nav_irrigation_text_color="#COLOR_STATUS_HEALTHY"
-			nav_led_text_color="#COLOR_DARK_FOREST"
-			nav_settings_text_color="#COLOR_DARK_FOREST"
+			nav_home_text_color="#COLOR_WHITE"
+			nav_sensors_text_color="#COLOR_WHITE"
+			nav_irrigation_text_color="#COLOR_WHITE"
+			nav_led_text_color="#COLOR_WHITE"
+			nav_settings_text_color="#COLOR_WHITE"
+			nav_home_bg_color="#COLOR_DARK_FOREST"
+			nav_sensors_bg_color="#COLOR_DARK_FOREST"
+			nav_irrigation_bg_color="#COLOR_PRIMARY_GREEN"
+			nav_led_bg_color="#COLOR_DARK_FOREST"
+			nav_settings_bg_color="#COLOR_DARK_FOREST"
+			nav_home_bg_opa="0"
+			nav_sensors_bg_opa="0"
+			nav_irrigation_bg_opa="255"
+			nav_led_bg_opa="0"
+			nav_settings_bg_opa="0"
 		/>
 	</view>
 </screen>

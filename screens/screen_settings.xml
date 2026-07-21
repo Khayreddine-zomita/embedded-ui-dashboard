@@ -4,7 +4,7 @@
 		height="320"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_APP_BG"
+		style_bg_color="#COLOR_WHITE"
 		style_bg_opa="255"
 		style_pad_all="0"
 		style_border_width="0"
@@ -14,7 +14,7 @@
 
 		<settings_menu_card
 			x="8"
-			y="46"
+			y="40"
 			account_value="Not linked"
 			wlan_value="Connected"
 			device_value="GL Tower"
@@ -25,19 +25,32 @@
 
 		<settings_status_bar
 			x="8"
-			y="232"
+			y="230"
 			system_status_value="All systems operational"
 			last_update_value="Today, 12:45"
 		/>
 
+		<!-- ========================================================= -->
+		<!-- BOTTOM NAVIGATION                                         -->
+		<!-- ========================================================= -->
 		<global_bottom_nav
 			x="0"
 			y="280"
-			nav_home_text_color="#COLOR_DARK_FOREST"
-			nav_sensors_text_color="#COLOR_DARK_FOREST"
-			nav_irrigation_text_color="#COLOR_DARK_FOREST"
-			nav_led_text_color="#COLOR_DARK_FOREST"
-			nav_settings_text_color="#COLOR_STATUS_HEALTHY"
+			nav_home_text_color="#COLOR_WHITE"
+			nav_sensors_text_color="#COLOR_WHITE"
+			nav_irrigation_text_color="#COLOR_WHITE"
+			nav_led_text_color="#COLOR_WHITE"
+			nav_settings_text_color="#COLOR_WHITE"
+			nav_home_bg_color="#COLOR_DARK_FOREST"
+			nav_sensors_bg_color="#COLOR_DARK_FOREST"
+			nav_irrigation_bg_color="#COLOR_DARK_FOREST"
+			nav_led_bg_color="#COLOR_DARK_FOREST"
+			nav_settings_bg_color="#COLOR_PRIMARY_GREEN"
+			nav_home_bg_opa="0"
+			nav_sensors_bg_opa="0"
+			nav_irrigation_bg_opa="0"
+			nav_led_bg_opa="0"
+			nav_settings_bg_opa="255"
 		/>
 	</view>
 </screen>

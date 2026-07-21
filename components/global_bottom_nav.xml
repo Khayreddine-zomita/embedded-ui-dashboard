@@ -5,6 +5,18 @@
 		<prop name="nav_irrigation_text_color" type="color" />
 		<prop name="nav_led_text_color" type="color" />
 		<prop name="nav_settings_text_color" type="color" />
+
+		<prop name="nav_home_bg_color" type="color" />
+		<prop name="nav_sensors_bg_color" type="color" />
+		<prop name="nav_irrigation_bg_color" type="color" />
+		<prop name="nav_led_bg_color" type="color" />
+		<prop name="nav_settings_bg_color" type="color" />
+
+		<prop name="nav_home_bg_opa" type="int" />
+		<prop name="nav_sensors_bg_opa" type="int" />
+		<prop name="nav_irrigation_bg_opa" type="int" />
+		<prop name="nav_led_bg_opa" type="int" />
+		<prop name="nav_settings_bg_opa" type="int" />
 	</api>
 
 	<view
@@ -12,16 +24,70 @@
 		height="40"
 		scrollable="false"
 		scrollbar_mode="off"
-		style_bg_color="#COLOR_WHITE"
+		style_bg_color="#COLOR_DARK_FOREST"
 		style_bg_opa="255"
 		style_pad_all="0"
 		style_border_width="0"
 		style_radius="0"
 	>
-		<!-- ========================================================= -->
-		<!-- HOME SLOT: 0 - 96                                         -->
-		<!-- Group width: 56, centered x = 20                          -->
-		<!-- ========================================================= -->
+		<!-- Slot separators -->
+		<lv_obj
+			name="nav_divider_1"
+			x="95"
+			y="0"
+			width="1"
+			height="40"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_GL_GREEN_DARK"
+			style_bg_opa="180"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			name="nav_divider_2"
+			x="191"
+			y="0"
+			width="1"
+			height="40"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_GL_GREEN_DARK"
+			style_bg_opa="180"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			name="nav_divider_3"
+			x="287"
+			y="0"
+			width="1"
+			height="40"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_GL_GREEN_DARK"
+			style_bg_opa="180"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<lv_obj
+			name="nav_divider_4"
+			x="383"
+			y="0"
+			width="1"
+			height="40"
+			scrollable="false"
+			scrollbar_mode="off"
+			style_bg_color="#COLOR_GL_GREEN_DARK"
+			style_bg_opa="180"
+			style_border_width="0"
+			style_pad_all="0"
+		/>
+
+		<!-- HOME -->
 		<lv_button
 			name="nav_home_btn"
 			x="0"
@@ -30,54 +96,40 @@
 			height="40"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_opa="0"
+			style_bg_color="$nav_home_bg_color"
+			style_bg_opa="$nav_home_bg_opa"
+			style_radius="10"
 			style_border_width="0"
-			style_radius="0"
 			style_pad_all="0"
 			style_shadow_width="0"
 		>
-			<lv_obj
-				x="20"
-				y="0"
-				width="56"
-				height="40"
+			<lv_image
+				name="nav_home_icon"
+				x="40"
+				y="5"
+				width="16"
+				height="16"
+				src="img_nav_home"
 				scrollable="false"
 				scrollbar_mode="off"
-				style_bg_opa="0"
-				style_border_width="0"
-				style_pad_all="0"
-				style_radius="0"
-			>
-				<lv_image
-					name="nav_home_icon"
-					x="0"
-					y="11"
-					width="16"
-					height="16"
-					src="img_nav_home"
-					scrollable="false"
-					scrollbar_mode="off"
-					style_image_recolor="$nav_home_text_color"
-					style_image_recolor_opa="255"
-				/>
+				style_image_recolor="$nav_home_text_color"
+				style_image_recolor_opa="255"
+			/>
 
-				<lv_label
-					name="nav_home_label"
-					x="22"
-					y="13"
-					width="34"
-					text="Home"
-					long_mode="clip"
-					style_text_color="$nav_home_text_color"
-					style_text_font="font_inter_12"
-				/>
-			</lv_obj>
+			<lv_label
+				name="nav_home_label"
+				x="0"
+				y="24"
+				width="96"
+				text="HOME"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$nav_home_text_color"
+				style_text_font="font_inter_10"
+			/>
 		</lv_button>
 
-		<!-- ========================================================= -->
-		<!-- SENSORS SLOT: 96 - 192                                    -->
-		<!-- Group width: 72, centered x = 12                          -->
-		<!-- ========================================================= -->
+		<!-- SENSORS -->
 		<lv_button
 			name="nav_sensors_btn"
 			x="96"
@@ -86,54 +138,40 @@
 			height="40"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_opa="0"
+			style_bg_color="$nav_sensors_bg_color"
+			style_bg_opa="$nav_sensors_bg_opa"
+			style_radius="10"
 			style_border_width="0"
-			style_radius="0"
 			style_pad_all="0"
 			style_shadow_width="0"
 		>
-			<lv_obj
-				x="12"
-				y="0"
-				width="72"
-				height="40"
+			<lv_image
+				name="nav_sensors_icon"
+				x="40"
+				y="5"
+				width="16"
+				height="16"
+				src="img_nav_sensors"
 				scrollable="false"
 				scrollbar_mode="off"
-				style_bg_opa="0"
-				style_border_width="0"
-				style_pad_all="0"
-				style_radius="0"
-			>
-				<lv_image
-					name="nav_sensors_icon"
-					x="0"
-					y="11"
-					width="16"
-					height="16"
-					src="img_nav_sensors"
-					scrollable="false"
-					scrollbar_mode="off"
-					style_image_recolor="$nav_sensors_text_color"
-					style_image_recolor_opa="255"
-				/>
+				style_image_recolor="$nav_sensors_text_color"
+				style_image_recolor_opa="255"
+			/>
 
-				<lv_label
-					name="nav_sensors_label"
-					x="22"
-					y="13"
-					width="50"
-					text="Sensors"
-					long_mode="clip"
-					style_text_color="$nav_sensors_text_color"
-					style_text_font="font_inter_12"
-				/>
-			</lv_obj>
+			<lv_label
+				name="nav_sensors_label"
+				x="0"
+				y="24"
+				width="96"
+				text="SENSORS"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$nav_sensors_text_color"
+				style_text_font="font_inter_10"
+			/>
 		</lv_button>
 
-		<!-- ========================================================= -->
-		<!-- IRRIGATION SLOT: 192 - 288                                -->
-		<!-- Group width: 84, centered x = 6                           -->
-		<!-- ========================================================= -->
+		<!-- IRRIGATION -->
 		<lv_button
 			name="nav_irrigation_btn"
 			x="192"
@@ -142,54 +180,40 @@
 			height="40"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_opa="0"
+			style_bg_color="$nav_irrigation_bg_color"
+			style_bg_opa="$nav_irrigation_bg_opa"
+			style_radius="10"
 			style_border_width="0"
-			style_radius="0"
 			style_pad_all="0"
 			style_shadow_width="0"
 		>
-			<lv_obj
-				x="6"
-				y="0"
-				width="84"
-				height="40"
+			<lv_image
+				name="nav_irrigation_icon"
+				x="40"
+				y="5"
+				width="16"
+				height="16"
+				src="img_nav_irrigation"
 				scrollable="false"
 				scrollbar_mode="off"
-				style_bg_opa="0"
-				style_border_width="0"
-				style_pad_all="0"
-				style_radius="0"
-			>
-				<lv_image
-					name="nav_irrigation_icon"
-					x="8"
-					y="11"
-					width="16"
-					height="16"
-					src="img_nav_irrigation"
-					scrollable="false"
-					scrollbar_mode="off"
-					style_image_recolor="$nav_irrigation_text_color"
-					style_image_recolor_opa="255"
-				/>
+				style_image_recolor="$nav_irrigation_text_color"
+				style_image_recolor_opa="255"
+			/>
 
-				<lv_label
-					name="nav_irrigation_label"
-					x="28"
-					y="13"
-					width="62"
-					text="Irrigation"
-					long_mode="clip"
-					style_text_color="$nav_irrigation_text_color"
-					style_text_font="font_inter_12"
-				/>
-			</lv_obj>
+			<lv_label
+				name="nav_irrigation_label"
+				x="0"
+				y="24"
+				width="96"
+				text="IRRIGATION"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$nav_irrigation_text_color"
+				style_text_font="font_inter_10"
+			/>
 		</lv_button>
 
-		<!-- ========================================================= -->
-		<!-- LIGHT SLOT: 288 - 384                                     -->
-		<!-- Group width: 50, centered x = 23                          -->
-		<!-- ========================================================= -->
+		<!-- LIGHT -->
 		<lv_button
 			name="nav_led_btn"
 			x="288"
@@ -198,54 +222,40 @@
 			height="40"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_opa="0"
+			style_bg_color="$nav_led_bg_color"
+			style_bg_opa="$nav_led_bg_opa"
+			style_radius="10"
 			style_border_width="0"
-			style_radius="0"
 			style_pad_all="0"
 			style_shadow_width="0"
 		>
-			<lv_obj
-				x="23"
-				y="0"
-				width="50"
-				height="40"
+			<lv_image
+				name="nav_led_icon"
+				x="40"
+				y="5"
+				width="16"
+				height="16"
+				src="img_nav_light"
 				scrollable="false"
 				scrollbar_mode="off"
-				style_bg_opa="0"
-				style_border_width="0"
-				style_pad_all="0"
-				style_radius="0"
-			>
-				<lv_image
-					name="nav_led_icon"
-					x="0"
-					y="11"
-					width="16"
-					height="16"
-					src="img_nav_light"
-					scrollable="false"
-					scrollbar_mode="off"
-					style_image_recolor="$nav_led_text_color"
-					style_image_recolor_opa="255"
-				/>
+				style_image_recolor="$nav_led_text_color"
+				style_image_recolor_opa="255"
+			/>
 
-				<lv_label
-					name="nav_led_label"
-					x="22"
-					y="12"
-					width="28"
-					text="Light"
-					long_mode="clip"
-					style_text_color="$nav_led_text_color"
-					style_text_font="font_inter_12"
-				/>
-			</lv_obj>
+			<lv_label
+				name="nav_led_label"
+				x="0"
+				y="24"
+				width="96"
+				text="LIGHT"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$nav_led_text_color"
+				style_text_font="font_inter_10"
+			/>
 		</lv_button>
 
-		<!-- ========================================================= -->
-		<!-- SETTINGS SLOT: 384 - 480                                  -->
-		<!-- Group width: 72, centered x = 12                          -->
-		<!-- ========================================================= -->
+		<!-- SETTINGS -->
 		<lv_button
 			name="nav_settings_btn"
 			x="384"
@@ -254,48 +264,37 @@
 			height="40"
 			scrollable="false"
 			scrollbar_mode="off"
-			style_bg_opa="0"
+			style_bg_color="$nav_settings_bg_color"
+			style_bg_opa="$nav_settings_bg_opa"
+			style_radius="10"
 			style_border_width="0"
-			style_radius="0"
 			style_pad_all="0"
 			style_shadow_width="0"
 		>
-			<lv_obj
-				x="12"
-				y="0"
-				width="72"
-				height="40"
+			<lv_image
+				name="nav_settings_icon"
+				x="40"
+				y="5"
+				width="16"
+				height="16"
+				src="img_nav_settings"
 				scrollable="false"
 				scrollbar_mode="off"
-				style_bg_opa="0"
-				style_border_width="0"
-				style_pad_all="0"
-				style_radius="0"
-			>
-				<lv_image
-					name="nav_settings_icon"
-					x="0"
-					y="11"
-					width="16"
-					height="16"
-					src="img_nav_settings"
-					scrollable="false"
-					scrollbar_mode="off"
-					style_image_recolor="$nav_settings_text_color"
-					style_image_recolor_opa="255"
-				/>
+				style_image_recolor="$nav_settings_text_color"
+				style_image_recolor_opa="255"
+			/>
 
-				<lv_label
-					name="nav_settings_label"
-					x="22"
-					y="12"
-					width="50"
-					text="Settings"
-					long_mode="clip"
-					style_text_color="$nav_settings_text_color"
-					style_text_font="font_inter_12"
-				/>
-			</lv_obj>
+			<lv_label
+				name="nav_settings_label"
+				x="0"
+				y="24"
+				width="96"
+				text="SETTINGS"
+				long_mode="clip"
+				style_text_align="center"
+				style_text_color="$nav_settings_text_color"
+				style_text_font="font_inter_10"
+			/>
 		</lv_button>
 	</view>
 </component>
